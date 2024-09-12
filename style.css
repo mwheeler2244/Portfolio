@@ -147,7 +147,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: black;
+   background-color: var(--primary);
 }
 .home img {
   width: 100%;
@@ -621,7 +621,7 @@ textarea {
 
 /*=============== FOOTER ===============*/
 footer {
-  background-color: black;
+  background-color: var(--primary);
   padding: var(--padding-700) var(--padding-400);
 }
 
@@ -658,6 +658,7 @@ footer .socials a {
   border: 1px solid white;
   padding: 10px;
   border-radius: 100vw;
+   background-color: transparent;
 }
 footer .socials i:hover {
   scale: 1.2;
