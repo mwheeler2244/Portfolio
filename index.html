@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- /*=============== NAVIGATION ===== ==========*/ -->
+
+    <header>
+      <nav class="wrapper">
+        <div class="logo">
+          <a href="index.html"><img src="./assets/logo.jpg" alt="" /></a>
+        </div>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav__links wrapper">
+          <ul>
+            <li><a class="links" href="#about">About Me</a></li>
+            <li>
+              <a class="links" href="#projects">Projects</a>
+            </li>
+
+            <li><a class="links" href="#blog">Blog</a></li>
+
+            <li><a class="links" href="#contact">Contact Me</a></li>
+          </ul>
+          <div class="mobile__close">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- /*=============== HOME ===============*/ -->
+
+    <main>
+      <section id="home" class="home">
+        <img src="./assets/about.jpg" alt="" />
+        <div class="hero container wrapper">
+          <div class="hero__text">
+            <span>I'm a</span>
+
+            <h1><span class="title">Front</span> End Developer</h1>
+            <p>
+              I design and develop responsive, user-friendly websites with HTML,
+              CSS, and JavaScript. Focusing on modern web standards and
+              interactive experiences.
+            </p>
+
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/michael-wheeler12/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/mwheeler2244"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://x.com/Michael68374214"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+            <button class="btn contact">Contact</button>
+          </div>
+        </div>
+        <div class="skills__logos">
+          <i class="fa-brands fa-html5" style="color: #f06529"></i>
+          <i class="fa-brands fa-css3-alt" style="color: #2965f1"></i>
+          <i class="fa-brands fa-js" style="color: #f0db4f"></i>
+        </div>
+      </section>
+
+      <!-- /*===================== ABOUT ===============*/ -->
+
+      <section id="about" class="about main__grid">
+        <div class="title__header wrapper">
+          <div class="header__sub">
+            <ul>
+              <li>Get to know me</li>
+            </ul>
+            <span></span>
+          </div>
+          <h2>Introduction</h2>
+        </div>
+        <div class="about__container wrapper">
+          <picture class="about__img">
+            <img
+              src="./assets/portfolioProfile.jpg"
+              alt="man at computer desk"
+              width="500px"
+              height="450px"
+            />
+          </picture>
+
+          <div class="about__content">
+            <h3>About me</h3>
+            <p>
+              I bring a unique blend of technical expertise and leadership
+              skills to every project. My background spans diverse roles, from
+              web development to managing cross-functional teams in
+              international settings. I’m passionate about creating
+              user-friendly web experiences and continuously expanding my
+              knowledge in cutting-edge technologies.
+            </p>
+            <div class="tabs">
+              <button class="btn__tab">Certificates</button>
+              <button class="btn__tab">Education</button>
+              <button class="btn__tab">Hobbies</button>
+            </div>
+            <div class="tab__box">
+              <div class="content">
+                <ul>
+                  <li>FreeCodeCamp-Responsive Web Design</li>
+                  <li>Harvard Online-CS50 Intro to Programming with Python</li>
+                  <li>Google Coursera-Project Management</li>
+                  <li>IBM- Databases and SQL for Data Science with Python</li>
+                  <li>Google Coursera-IT Technical Support Fundamentals</li>
+                </ul>
+              </div>
+              <div class="content">
+                <ul>
+                  <li>
+                    2013 Bachelor of Science<br />
+                    Business Administration<br />
+                    University of Nebraska, Lincoln, NE
+                  </li>
+                </ul>
+              </div>
+              <div class="content">
+                <p>1. Martial Arts Instructor</p>
+                <ul>
+                  <li>Mid-American Martial Arts</li>
+                  <li>Lincoln Brazilian Ju Jitsu</li>
+                </ul>
+                <p>2. AI-Driven Video Production – Education Content</p>
+                <ul>
+                  <li class="youtube">
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-youtube"
+                        style="color: #da0b0b"
+                      ></i>
+                      @CuriousJonah</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- /*===================== PROJECTS ===============*/ -->
+
+      <section id="projects" class="projects wrapper main__grid">
+        <div class="title__header">
+          <div class="header__sub">
+            <ul>
+              <li>Explore my latest</li>
+            </ul>
+            <span></span>
+          </div>
+          <h2>Projects</h2>
+        </div>
+        <div class="projects__container wrapper">
+          <div class="projects__box">
+            <div class="projects__card">
+              <img src="./assets/project1hero.jpg" alt="" />
+            </div>
+            <div class="projects__card-text">
+              <h3>Dummy E-commerce Website</h3>
+              <p>
+                I developed a fully functional e-commerce website. The site
+                includes an interactive shopping cart, and a checkout process.
+                Users can adjust product quantities, view the total cost, and
+                proceed to checkout.
+              </p>
+              <div class="project__card-text-details">
+                <h4>Technologies Used:</h4>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                </ul>
+
+                <h4>Challenges Solved:</h4>
+                <ul>
+                  <li>Cart updates</li>
+                  <li>Quantity changes and price recalculations.</li>
+                  <li>
+                    Designed a separate, secure page for entering credit card
+                    details
+                  </li>
+                </ul>
+              </div>
+              <button class="btn__projects">
+                <a href="https://github.com/mwheeler2244/VR-Headset-E-Commerce"
+                  ><span class="projects__button-text"
+                    >Visit<i class="fa-solid fa-arrow-right"></i
+                  ></span>
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="projects__box">
+            <div class="projects__card-text">
+              <h3>Musician Website Design</h3>
+              <p>
+                Collaborated with a local musician to design and develop a
+                responsive website that showcases their music, upcoming shows,
+                and media.
+              </p>
+              <div class="project__card-text-details">
+                <h4>Technologies Used:</h4>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                  <li>Responsive design principles</li>
+                </ul>
+
+                <h4>Challenges Solved:</h4>
+                <ul>
+                  <li>Designed a cohesive branding and user interface.</li>
+                  <li>Optimized the site for mobile users.</li>
+                </ul>
+              </div>
+              <button class="btn__projects">
+                <a href="https://andrewmichaelsmith.org/"
+                  ><span class="projects__button-text"
+                    >Visit<i class="fa-solid fa-arrow-right"></i
+                  ></span>
+                </a>
+              </button>
+            </div>
+            <div class="projects__card">
+              <img src="./assets/project2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- /*===================== BLOG ===============*/ -->
+
+      <section id="blog" class="blog main__grid">
+        <div class="title__header wrapper">
+          <div class="header__sub">
+            <ul>
+              <li>Visit my latest</li>
+            </ul>
+            <span></span>
+          </div>
+
+          <h2>Blog</h2>
+        </div>
+        <div class="row wrapper">
+          <a href="https://muaythaiinphuket.com/"
+            ><img src="./assets/blog3.jpg" alt="travel thailand blog"
+          /></a>
+          <div class="blog__text">
+            <h3>Muay Thai in Phuket</h3>
+            <a href="https://muaythaiinphuket.com/">www.muaythaiinphuket.com</a>
+            <br /><span>August, 2024</span>
+
+            <p>
+              Thailand's cuisine reflects its diverse regions, from Northern
+              curries and Northeastern salads to Central street foods and
+              Southern seafood dishes. This guide highlights "10 Thai Dishes You
+              Need to Try" from the North, Isaan, Central, and South.
+            </p>
+            <button class="btn btn-blog">
+              <a href="https://muaythaiinphuket.com/">
+                Read more<i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+        <div class="row wrapper">
+          <a href="https://discoverthaifood.com/"
+            ><img src="./assets/blog1.jpg" alt="travel thailand blog"
+          /></a>
+          <div class="blog__text">
+            <h3>
+              Discover the Flavors of Thailand:<br />
+              10 Must-Try Dishes from Every Region
+            </h3>
+            <a href="https://discoverthaifood.com/">www.discoverthaifood.com</a>
+            <span>August, 2024-Travel Thailand</span>
+            <p>
+              Thailand's cuisine reflects its diverse regions, from Northern
+              curries and Northeastern salads to Central street foods and
+              Southern seafood dishes. This guide highlights "10 Thai Dishes You
+              Need to Try" from the North, Isaan, Central, and South.
+            </p>
+            <button class="btn btn-blog">
+              <a href="https://discoverthaifood.com/">
+                Read more<i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+        <div class="row wrapper">
+          <a href=""><img src="./assets/blog2.jpg" alt="thai food blog" /></a>
+          <div class="blog__text">
+            <h3>
+              Discover Wonderful Thailand: <br />
+              4 top destinations in Thailand
+            </h3>
+            <span>August, 2024-Travel Thailand</span>
+            <p>
+              Explore Thailand's best: Dive into the rich culture, stunning
+              landscapes, and vibrant cities of Bangkok, Chiang Mai, Phuket, and
+              Krabi.
+            </p>
+            <button class="btn btn-blog">
+              <a href="">Read more<i class="fa-solid fa-arrow-right"></i></a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!---------------------- CONTACT------------------- -->
+
+      <section id="contact" class="contact main__grid">
+        <div class="title__header wrapper">
+          <div class="header__sub">
+            <ul>
+              <li>Get in touch</li>
+            </ul>
+            <span></span>
+          </div>
+
+          <h2>Contact Me</h2>
+        </div>
+        <div class="contact__container wrapper">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="70f7e2d3-d299-4c2c-afec-eb3be67514da"
+            />
+            <label for="name">Name</label>
+            <input
+              class="contact__inputs"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              class="contact__inputs"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              class="contact__inputs"
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+              required
+            ></textarea>
+
+            <button class="btn__contact" type="submit" value="Submit">
+              <span class="projects__button-text">Submit</span>
+            </button>
+          </form>
+          <div id="customAlert" class="custom-alert">
+            <p id="alertMessage"></p>
+            <button onclick="closeAlert()">OK</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__container">
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/michael-wheeler12/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/mwheeler2244"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://x.com/Michael68374214"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </div>
+
+        <div class="name__sub">
+          <i class="fa-regular fa-envelope"> </i>
+          <p>mwheeler87@gmail.com</p>
+        </div>
+        <p>@Copyright 2024. All rights reserved. Privacy Policy</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
