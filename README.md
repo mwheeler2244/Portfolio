@@ -30,5 +30,5 @@ Responsive Design
 SEO Optimization
 
 - **Email:** mhwheeler87@gmail.com
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/michael-wheeler12/)
-- **Website:** [Your Website](https://mikewheelerdev.com/)
+- **LinkedIn:** (https://www.linkedin.com/in/michael-wheeler12/)
+- **Website:** [Mikewheelerdev.com](https://mikewheelerdev.com/)
