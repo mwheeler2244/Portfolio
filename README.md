@@ -10,7 +10,7 @@ Welcome to my portfolio repository! This repository showcases a collection of my
 
 - **[Discover the Flavors of Thailand: 10 Must-Try Dishes from Every Region](http://www.discoverthaifood.com):** Thailand's cuisine reflects its diverse regions, from Northern curries and Northeastern salads to Central street foods and Southern seafood dishes. This guide highlights "10 Thai Dishes You Need to Try" from the North, Isaan, Central, and South. Completed in August 2024.
 
-- **[Discover Wonderful Thailand: 4 Top Destinations in Thailand]([http://www.discoverwonderfulthailand.com](https://github.com/mwheeler2244/Travel-Thailand)):** Explore Thailand's best: Dive into the rich culture, stunning landscapes, and vibrant cities of Bangkok, Chiang Mai, Phuket, and Krabi. Completed in August 2024.
+- **[Discover Wonderful Thailand: 4 Top Destinations in Thailand](https://github.com/mwheeler2244/Travel-Thailand):** Explore Thailand's best: Dive into the rich culture, stunning landscapes, and vibrant cities of Bangkok, Chiang Mai, Phuket, and Krabi. Completed in August 2024.
 
 ## **Technologies**
 
