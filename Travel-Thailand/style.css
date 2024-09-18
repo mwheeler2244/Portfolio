@@ -1,0 +1,418 @@
+:root {
+  --background: #f8f8fc;
+  --primary: #4a52b5;
+  --banner: #d4d89f;
+  --text-color-accent: hsl(190, 24%, 35%);
+  --text-color-main: #0a0b17;
+  --text-color-white: #fff;
+  --fs-300: clamp(0.75rem, 0.75rem + 0.75vw, 1.25rem);
+  --fs-400: clamp(0.95rem, 1rem + 1.5vw, 1.5rem);
+  --fs-500: clamp(1rem, 1rem + 2.5vw, 2.5rem);
+  --fs-600: clamp(1.125rem, 1rem + 5vw, 3.5rem);
+  --fs-700: clamp(2rem, 1rem + 10vw, 5rem);
+  --fs-xl: clamp(2.5rem, 1rem + 15vw, 6rem);
+  --padding-400: 1rem;
+  --padding-600: 2rem;
+  --padding-700: 3rem;
+  --margin-400: 1rem;
+  --margin-600: 2rem;
+  --margin-700: 3rem;
+  --margin-800: 5rem;
+  --margin-xl: clamp(6rem, 1rem + 25vw, 12rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  color: var(--text);
+  line-height: 1.6;
+  font-size: var(--fs-400);
+  background-color: aliceblue;
+  max-width: 1800px;
+  margin-inline: auto;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Caveat", sans-serif;
+  line-height: 1.1;
+}
+h1 {
+  font-size: var(--fs-xl);
+  padding-block: var(--padding-400);
+}
+
+h2 {
+  font-size: var(--fs-600);
+  color: var(--text-color-accent);
+  text-align: center;
+}
+
+h3 {
+  font-size: var(--fs-500);
+}
+p {
+  font-size: var(--fs-300);
+  margin-left: var(--margin-400);
+  margin-bottom: var(--margin-400);
+}
+li,
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+span {
+  color: var(--banner);
+  font-size: var(--fs-xl);
+  font-weight: 900;
+  font-family: "Caveat", sans-serif;
+}
+figure {
+  overflow: hidden;
+}
+.line {
+  width: 100%;
+  border-bottom: 3px solid var(--text-color-accent);
+  margin-inline: var(--margin-400);
+}
+.section__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: var(--margin-800);
+}
+.main__text {
+  display: grid;
+  margin: var(--margin-700) var(--margin-400);
+}
+
+.wrapper {
+  width: min(100% - 1rem, 1440px);
+  margin-inline: auto;
+}
+.flow > * + * {
+  margin-top: var(--margin-xl);
+}
+
+.btn {
+  padding: var(--margin-400) var(--padding-600);
+  margin-left: var(--margin-400);
+  color: var(--text-color-accent);
+  border: 2px solid var(--text-color-accent);
+  justify-content: center;
+  font-weight: 600;
+  background: hsla(64, 42%, 74%, 0.144);
+  place-self: center;
+  box-shadow: 1px 1px 5px var(--text-color-accent);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+
+/*=============== HOME ===============*/
+
+.home {
+  display: grid;
+  min-height: 100vh;
+  background-image: url(./assets/IMG_3227.JPG);
+  background-repeat: no-repeat;
+  background-position: top-center;
+  background-size: cover;
+  padding: 0.5rem;
+  isolation: isolate;
+}
+
+.nav__bar {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  background-color: #d4d89f;
+  padding-block: 3rem;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 1);
+  transition: 0.3s ease-in;
+}
+.logo a {
+  color: var(--text-color-accent);
+}
+.nav__links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.nav__bar.active {
+  right: 0;
+  z-index: 1;
+}
+
+.nav__links a {
+  color: var(--text-color-accent);
+}
+
+.nav__links li:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.125rem;
+  text-underline-offset: 0.25rem;
+  text-decoration-color: var(--banner);
+}
+.mobile__nav-open {
+  position: absolute;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  top: 20px;
+  right: 20px;
+}
+.mobile__nav-close {
+  font-size: 1.5rem;
+  color: var(--text-color-accent);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  margin-left: var(--margin-400);
+  cursor: pointer;
+}
+.fa-brands {
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 0.5rem;
+}
+.fa-brands:hover {
+  transition: 0.5s ease;
+  color: var(--banner);
+  transform: scale(1.2);
+}
+
+.home__text {
+  display: grid;
+  place-items: center;
+  color: var(--text-color-white);
+}
+.home__footer-img {
+  display: none;
+}
+
+/*=============== PHUKET ===============*/
+
+.phuket__container {
+  max-width: 800px;
+  margin: auto;
+}
+.grid {
+  display: grid;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.home__grid {
+  overflow: hidden;
+}
+.grid img {
+  aspect-ratio: 1.25 / 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+.phuket article:nth-child(n + 1):nth-child(-n + 2) {
+  grid-column: span 2;
+}
+
+.main__text span {
+  font-size: var(--fs-500);
+  color: var(--text-color-accent);
+  vertical-align: center;
+  line-height: 1;
+  margin-left: 1rem;
+}
+
+/*=============== ABOUT ===============*/
+
+.about__container {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+
+  background-color: var(--banner);
+  padding-block: var(--padding-600);
+  margin-inline: auto;
+  margin-block: var(--margin-700);
+}
+
+.box {
+  text-align: center;
+  color: var(--text-color-accent);
+  flex: 1;
+}
+
+/*=============== BANGKOK ===============*/
+
+.bangkok__container {
+  display: grid;
+  align-items: center;
+}
+.bangkok .grid {
+}
+
+.bangkok__container .home__grid:nth-child(1) {
+  grid-column: 1 / -1;
+}
+
+/*=============== PATTAYA ===============*/
+
+.pattaya__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: center;
+}
+.pattaya__container > :nth-child(1) {
+  order: 2;
+}
+
+/*=============== KRABI ===============*/
+
+/*=============== FOOTER ===============*/
+
+.footer__container {
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--text-color-accent);
+  padding: 5rem var(--padding-700);
+  color: white;
+  gap: 1rem;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+/*=============== BREAKPOINTS ===============*/
+@media (min-width: 600px) {
+  .phuket .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
+  }
+
+  .bangkok__container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .bangkok .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .bangkok .main__text {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+  .nav__bar {
+    background-color: transparent;
+    width: min(100% - 1rem, 1440px);
+    border: none;
+    box-shadow: none;
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+    align-items: start;
+  }
+  .nav__links {
+    flex-direction: row;
+    gap: 2rem;
+    cursor: pointer;
+  }
+  .logo a {
+    color: white;
+  }
+  .nav__links a {
+    color: white;
+  }
+  .mobile__nav-open {
+    display: none;
+  }
+  .mobile__nav-close {
+    display: none;
+  }
+
+  .main__text-box {
+    width: 350px;
+    color: var(--text-color-white);
+  }
+  .home__text {
+    display: block;
+  }
+
+  .home__text::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 650px;
+
+    background-color: hsl(190, 24%, 35%);
+    z-index: -1;
+    mix-blend-mode: multiply;
+  }
+}
+@media (min-width: 875px) {
+  .home__footer-img {
+    display: flex;
+
+    justify-content: end;
+    gap: 0.5rem;
+  }
+  figure {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+  }
+  figure img {
+    box-shadow: 1px 1px 10px black;
+  }
+}
