@@ -89,6 +89,9 @@ h4 {
   font-size: var(--fs-450);
   font-weight: var(--fw-light);
 }
+h5 {
+  font-weight: 300;
+}
 p,
 li,
 ul,
@@ -114,7 +117,7 @@ li::marker {
 }
 
 .wrapper {
-  width: min(100% - 32px, 1440px);
+  width: min(100% - 32px, 1140px);
   margin-inline: auto;
 }
 
@@ -147,7 +150,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-   background-color: var(--primary);
+  background-color: var(--primary);
 }
 .home img {
   width: 100%;
@@ -524,7 +527,7 @@ button i {
   margin-bottom: 6px;
 }
 
-/*=============== BLOG ===============*/
+/*=============== TRAVEL BLOG ===============*/
 .blog {
   background-color: #f3f3f3;
   padding-block: var(--padding-700);
@@ -556,13 +559,49 @@ button i {
   box-shadow: 2px 2px 0 2px rgba(0, 0, 0);
 }
 
+/*===================== TECH BLOG ===============*/
+.blog__container {
+}
+.code__blog-title {
+}
+.blog__card {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-700);
+}
+.tech__blog img {
+  border-radius: 100vw;
+}
+.recent__posts {
+  display: flex;
+  border-radius: 4px;
+  max-width: 35ch;
+  padding: var(--padding-400);
+  justify-content: center;
+  outline: 1px solid #d1d5db;
+  outline-offset: 6px;
+  background-color: #f3f3f3;
+}
+.recent__posts p {
+  font-weight: 500;
+}
+
 /*=============== CONTACT ===============*/
 .contact {
   position: relative;
+  min-height: 100vh;
 }
+
 .contact__container {
   margin-inline: auto;
   max-width: 600px;
+  align-content: center;
+}
+.contact__container h2 {
+  padding-bottom: var(--padding-700);
+}
+.blog__card {
+  padding-block: var(--padding-600);
 }
 
 input,
@@ -658,13 +697,13 @@ footer .socials a {
   border: 1px solid white;
   padding: 10px;
   border-radius: 100vw;
-   background-color: transparent;
+  background-color: transparent;
 }
 footer .socials i:hover {
   scale: 1.2;
   transform: translateX(0);
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .nav__links {
     flex-direction: column;
     position: absolute;
@@ -708,5 +747,8 @@ footer .socials i:hover {
 
   .projects__box:last-child .projects__card-text {
     grid-row: 2;
+  }
+  .blog img {
+    margin-inline: auto;
   }
 }

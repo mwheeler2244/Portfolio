@@ -45,7 +45,7 @@
 
             <li><a class="links" href="#blog">Blog</a></li>
 
-            <li><a class="links" href="#contact">Contact Me</a></li>
+            <li><a class="links" href="contact.html">Contact Me</a></li>
           </ul>
           <div class="mobile__close">
             <i class="fa-solid fa-x"></i>
@@ -81,7 +81,6 @@
                 ><i class="fa-brands fa-x-twitter"></i
               ></a>
             </div>
-            <button class="btn contact"><a href="#contact">Contact</a></button>
           </div>
         </div>
         <div class="skills__logos">
@@ -189,7 +188,7 @@
               <img src="./assets/project1hero.jpg" alt="" />
             </div>
             <div class="projects__card-text">
-              <h3>Dummy E-Commerce Website</h3>
+              <h3>E-Commerce Website</h3>
               <p>
                 I developed a fully functional e-commerce website. The site
                 includes an interactive shopping cart, and a checkout process.
@@ -261,7 +260,7 @@
         </div>
       </section>
 
-      <!-- /*===================== BLOG ===============*/ -->
+      <!-- /*===================== TRAVEL BLOG ===============*/ -->
 
       <section id="blog" class="blog main__grid">
         <div class="title__header wrapper">
@@ -272,7 +271,7 @@
             <span></span>
           </div>
 
-          <h2>Blog</h2>
+          <h2>Travel Blog</h2>
         </div>
         <div class="row wrapper">
           <a href="https://muaythaiinphuket.com/"
@@ -284,8 +283,10 @@
             <br /><span>August, 2024</span>
 
             <p>
-              Discover the ultimate guide to training Muay Thai in Thailand! From top gyms to essential tips for first-time travelers, 
-              this blog dives deep into the heart of the sport in the country where it all began.
+              Discover the ultimate guide to training Muay Thai in Thailand!
+              From top gyms to essential tips for first-time travelers, this
+              blog dives deep into the heart of the sport in the country where
+              it all began.
             </p>
             <button class="btn btn-blog">
               <a href="https://muaythaiinphuket.com/">
@@ -319,7 +320,9 @@
           </div>
         </div>
         <div class="row wrapper">
-          <a href="https://github.com/mwheeler2244/Travel-Thailand"><img src="./assets/blog2.jpg" alt="travel thailand blog" /></a>
+          <a href="Travel-Thailand/index.html"
+            ><img src="./assets/blog2.jpg" alt="travel thailand blog"
+          /></a>
           <div class="blog__text">
             <h3>
               Discover Wonderful Thailand: <br />
@@ -332,73 +335,49 @@
               Krabi.
             </p>
             <button class="btn btn-blog">
-              <a href="https://github.com/mwheeler2244/Travel-Thailand">Read more<i class="fa-solid fa-arrow-right"></i></a>
+              <a href="Travel-Thailand/index.html"
+                >Read more<i class="fa-solid fa-arrow-right"></i
+              ></a>
             </button>
           </div>
         </div>
       </section>
 
-      <!---------------------- CONTACT------------------- -->
-
-      <section id="contact" class="contact main__grid">
+      <!-- /*===================== TECH BLOG ===============*/ -->
+      <section class="tech__blog wrapper main__grid" id="tech__blog">
         <div class="title__header wrapper">
           <div class="header__sub">
             <ul>
-              <li>Get in touch</li>
+              <li>Visit my latest</li>
             </ul>
             <span></span>
           </div>
 
-          <h2>Contact Me</h2>
+          <h2>Learning to Code Blog</h2>
         </div>
-        <div class="contact__container wrapper">
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input
-              type="hidden"
-              name="access_key"
-              value="70f7e2d3-d299-4c2c-afec-eb3be67514da"
-            />
-            <label for="name">Name</label>
-            <input
-              class="contact__inputs"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name.."
-              required
-            />
 
-            <label for="email">Email</label>
-            <input
-              class="contact__inputs"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email.."
-              required
+        <article class="blog__container">
+          <div class="recent__posts">
+            <img
+              src="./assets/recentPostIMG.svg"
+              alt=""
+              width="20px"
+              height="20px"
             />
-
-            <label for="message">Message</label>
-            <textarea
-              class="contact__inputs"
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-              style="height: 200px"
-              required
-            ></textarea>
-
-            <button class="btn__contact" type="submit" value="Submit">
-              <span class="projects__button-text">Submit</span>
-            </button>
-          </form>
-          <div id="customAlert" class="custom-alert">
-            <p id="alertMessage"></p>
-            <button onclick="closeAlert()">OK</button>
+            <p>RECENT POSTS</p>
           </div>
-        </div>
+          <div class="blog__card">
+            <div class="code__blog-title">
+              <h5>Day 1: Building the Basics - HTML</h5>
+              <span>September 18, 2024</span>
+            </div>
+            <img src="./assets/htmllogo.jpg" alt="" />
+          </div>
+        </article>
       </section>
     </main>
+
+    <!---------------------- FOOTER------------------- -->
 
     <footer>
       <div class="footer__container">
