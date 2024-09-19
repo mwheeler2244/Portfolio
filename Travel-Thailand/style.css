@@ -141,6 +141,35 @@ figure {
 .btn:hover {
   transform: scale(1.2);
 }
+.facebook-share {
+  background-color: #316ff6;
+}
+.twitter-share {
+  background-color: black;
+}
+.instagram-share {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+.linkedin-share {
+  background-color: #316ff6;
+}
+.socials__share .fa-brands {
+  padding: 1rem;
+}
+.socials__share {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  font-size: 1.5rem;
+  color: white;
+  margin-left: var(--margin-400);
+  cursor: pointer;
+}
+
+.socials__share a:hover {
+  scale: 1.1;
+}
+
 
 /*=============== HOME ===============*/
 
@@ -212,25 +241,7 @@ figure {
   cursor: pointer;
 }
 
-.socials {
-  display: flex;
-  gap: 2rem;
-  font-size: 1.5rem;
-  color: white;
-  margin-left: var(--margin-400);
-  cursor: pointer;
-}
-.fa-brands {
-  border-radius: 50%;
-  background-color: transparent;
-  border: 2px solid white;
-  padding: 0.5rem;
-}
-.fa-brands:hover {
-  transition: 0.5s ease;
-  color: var(--banner);
-  transform: scale(1.2);
-}
+
 
 .home__text {
   display: grid;
@@ -299,8 +310,7 @@ figure {
   display: grid;
   align-items: center;
 }
-.bangkok .grid {
-}
+
 
 .bangkok__container .home__grid:nth-child(1) {
   grid-column: 1 / -1;
@@ -317,15 +327,26 @@ figure {
   order: 2;
 }
 
+/*=============== SHARE ===============*/
+.footer__share {
+  text-align: center;
+}
+.socials__share-footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.socials__share-footer .fa-brands {
+  padding: 1rem 3rem;
+}
+
 /*=============== KRABI ===============*/
 
 /*=============== FOOTER ===============*/
 
 .footer__container {
   display: flex;
-
   justify-content: space-evenly;
-  align-items: center;
   flex-wrap: wrap;
   background-color: var(--text-color-accent);
   padding: 5rem var(--padding-700);
@@ -392,8 +413,11 @@ figure {
   .home__text {
     display: block;
   }
-
-  .home__text::after {
+ .home {
+    position: relative;
+  }
+  
+  .home::after {
     content: "";
     position: absolute;
     inset: 0;
