@@ -339,6 +339,9 @@ figure {
 .socials__share-footer .fa-brands {
   padding: 1rem 3rem;
 }
+.socials__share-footer a:hover {
+  scale: 1.05;
+}
 
 /*=============== KRABI ===============*/
 
