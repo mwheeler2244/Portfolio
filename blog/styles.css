@@ -52,7 +52,7 @@ svg {
 }
 
 html {
-  font-family: "Marcellus SC", sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 body {
@@ -109,6 +109,9 @@ span {
   width: min(100% - 32px, 1040px);
   margin-inline: auto;
 }
+.flow > * + * {
+  margin-top: var(--margin-600);
+}
 
 section {
   margin-bottom: var(--margin-800);
@@ -123,8 +126,16 @@ header {
   justify-content: space-evenly;
 }
 main {
-  margin-top: var(--margin-800);
+  margin-block: var(--margin-800);
 }
 main img {
   margin-top: var(--margin-700);
+}
+.fcc__img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-600);
+}
+.fcc__img img {
+  box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.452);
 }

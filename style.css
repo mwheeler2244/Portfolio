@@ -162,7 +162,6 @@ nav {
   display: flex;
   align-items: center;
   padding-block: var(--padding-400);
-
 }
 .nav__links {
   display: flex;

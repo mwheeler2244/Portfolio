@@ -170,7 +170,6 @@ figure {
   scale: 1.1;
 }
 
-
 /*=============== HOME ===============*/
 
 .home {
@@ -241,8 +240,6 @@ figure {
   cursor: pointer;
 }
 
-
-
 .home__text {
   display: grid;
   place-items: center;
@@ -310,7 +307,6 @@ figure {
   display: grid;
   align-items: center;
 }
-
 
 .bangkok__container .home__grid:nth-child(1) {
   grid-column: 1 / -1;
@@ -417,10 +413,10 @@ figure {
   .home__text {
     display: block;
   }
- .home {
+  .home {
     position: relative;
   }
-  
+
   .home::after {
     content: "";
     position: absolute;
