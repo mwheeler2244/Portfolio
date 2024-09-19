@@ -333,6 +333,7 @@ figure {
 }
 .socials__share-footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 }
