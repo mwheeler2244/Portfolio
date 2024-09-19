@@ -1,0 +1,130 @@
+:root {
+  --background: white;
+  --primary: #2a3047;
+  --button: #ec5b53;
+  --textSecondary: rgb(128, 128, 128);
+  --accent: #3dc9ee;
+
+  --fs-300: clamp(1rem, 0.75rem + 1vw, 1rem);
+  --fs-350: clamp(1rem, 0.75rem + 1vw, 1.25rem);
+  --fs-400: clamp(1rem, 1rem + 1.5vw, 1.5rem);
+  --fs-450: clamp(1rem, 1rem + 1.65vw, 1.5rem);
+  --fs-500: clamp(1rem, 1rem + 2vw, 1.5rem);
+  --fs-600: clamp(1.125rem, 1rem + 3vw, 2.25rem);
+  --fs-700: clamp(1.25rem, 1rem + 5vw, 3.5rem);
+  --fs-xl: clamp(2.5rem, 1rem + 15vw, 6rem);
+  --fw-light: 300;
+  --fw-med: 400;
+  --fw-semibld: 500;
+  --fw-bld: 700;
+  --padding-400: 12px;
+  --padding-600: 32px;
+  --padding-700: 48px;
+  --margin-400: 16px;
+  --margin-600: 32px;
+  --margin-700: 48px;
+  --margin-800: 80px;
+  --margin-xl: clamp(6rem, 1rem + 25vw, 12rem);
+  --gap-400: 16px;
+  --gap-600: 32px;
+  --gap-700: 48px;
+  --gap-800: 64px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+
+  cursor: pointer;
+  object-fit: cover;
+}
+
+html {
+  font-family: "Marcellus SC", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  color: var(--text);
+  line-height: 1.6;
+  font-size: var(--fs-400);
+  background-color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+h1 {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bld);
+}
+
+h2 {
+  font-size: var(--fs-500);
+
+  font-weight: var(--fw-med);
+}
+
+h3 {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-semibld);
+}
+h4 {
+  font-size: var(--fs-450);
+  font-weight: var(--fw-light);
+}
+h5 {
+  font-weight: 300;
+}
+p,
+li,
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-light);
+  margin-bottom: 0;
+}
+span {
+  font-size: var(--fs-300);
+  color: var(--textSecondary);
+}
+
+.wrapper {
+  width: min(100% - 32px, 1040px);
+  margin-inline: auto;
+}
+
+section {
+  margin-bottom: var(--margin-800);
+  scroll-margin-top: 110px;
+}
+header {
+  padding: 1.5rem;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-evenly;
+}
+main {
+  margin-top: var(--margin-800);
+}
+main img {
+  margin-top: var(--margin-700);
+}
