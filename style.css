@@ -189,7 +189,7 @@ nav .logo {
 .nav__links a {
   position: relative;
   color: var(--primary);
-  font-size: var(--fs-350);
+  font-size: var(--fs-300);
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s ease;
@@ -198,7 +198,7 @@ nav .logo {
 .nav__links a::before {
   position: absolute;
   content: "";
-  top: 30px;
+  top: 24px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -557,10 +557,7 @@ button i {
 }
 
 /*===================== TECH BLOG ===============*/
-.blog__container {
-}
-.code__blog-title {
-}
+
 .blog__card {
   display: flex;
   align-items: center;
