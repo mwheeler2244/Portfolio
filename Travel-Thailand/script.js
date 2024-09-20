@@ -48,7 +48,7 @@ document.querySelectorAll(".facebook-share").forEach((el) => {
 
 // Set href for all Twitter share links
 document.querySelectorAll(".twitter-share").forEach((el) => {
-  el.href = `https://twitter.com/share?url=${window.location.href}&text=Check%20out%20this%20Muay%20Thai%20blog!`;
+  el.href = `https://twitter.com/share?url=${window.location.href}&text=Check%20out%20this%20Travel%20Blog!`;
 });
 
 // Set href for all Instagram share links
