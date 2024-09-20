@@ -164,6 +164,7 @@ figure {
   color: white;
   margin-left: var(--margin-400);
   cursor: pointer;
+  padding-top: 2rem;
 }
 
 .socials__share a:hover {
@@ -232,11 +233,11 @@ figure {
   
 }
 .mobile__nav-close {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--text-color-accent);
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 20px;
   cursor: pointer;
 }
 
@@ -446,6 +447,5 @@ figure {
     box-shadow: 1px 1px 10px black;
   }
   .footer__container {
-
    flex-direction: row;
 }
