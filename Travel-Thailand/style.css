@@ -346,6 +346,7 @@ figure {
 
 .footer__container {
   display: flex;
+   flex-direction: column;
   justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: var(--text-color-accent);
@@ -444,4 +445,7 @@ figure {
   figure img {
     box-shadow: 1px 1px 10px black;
   }
+  .footer__container {
+
+   flex-direction: row;
 }
