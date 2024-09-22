@@ -710,6 +710,66 @@ footer .socials i:hover {
   scale: 1.2;
   transform: translateX(0);
 }
+
+/*=============== MORE PROJECTS.HTML ===============*/
+.more__projects-nav {
+  background-color: var(--primary);
+}
+.more__projects h1 {
+  text-align: left;
+  padding-bottom: var(--padding-700);
+  text-shadow: none;
+}
+.more__projects h2 {
+  font-size: var(--fs-450);
+}
+
+/* .nav__links-projects ul {
+  color: black;
+  display: flex;
+  justify-content: space-evenly; */
+
+.more__projects {
+  min-height: 100vh;
+  padding-top: 200px;
+  align-content: center;
+}
+
+.more__projects-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 125px;
+  counter-reset: card-count;
+}
+.more__projects-card > li {
+  counter-increment: card-count;
+}
+.more__projects-box {
+  display: grid;
+}
+
+.more__projects-box img {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.452);
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.more__projects-box > div::before {
+  content: counter(card-count, decimal-leading-zero);
+  font-size: 4rem;
+  color: hsl(5, 86%, 63%);
+}
+.more__projects-box .source__links {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-400);
+  padding-block: var(--padding-400);
+}
+.more__projects-box .source__links .fa-brands {
+  scale: 1.7;
+}
+
 @media (max-width: 850px) {
   .nav__links {
     flex-direction: column;
