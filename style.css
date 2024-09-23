@@ -570,11 +570,23 @@ button i {
 }
 
 /*===================== TECH BLOG ===============*/
+.blog__container{
+  margin-inline: auto;
+}
+.blog__subheader{
+  padding-top: var(--padding-700);
+  display: grid;
+  justify-items: center;
+  gap: var(--gap-400);
+  
+}
 
-.blog__card {
+.tech__blog .blog__card {
   display: flex;
   align-items: center;
   gap: var(--gap-700);
+  margin-top: var(--padding-700);
+
 }
 .tech__blog img {
   border-radius: 100vw;
@@ -582,7 +594,7 @@ button i {
 .recent__posts {
   display: flex;
   border-radius: 4px;
-  max-width: 35ch;
+  max-width: 65ch;
   padding: var(--padding-400);
   justify-content: center;
   outline: 1px solid #d1d5db;
@@ -607,9 +619,7 @@ button i {
 .contact__container h2 {
   padding-bottom: var(--padding-700);
 }
-.blog__card {
-  padding-block: var(--padding-600);
-}
+
 
 input,
 select,

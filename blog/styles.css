@@ -84,7 +84,7 @@ h3 {
 }
 h4 {
   font-size: var(--fs-450);
-  font-weight: var(--fw-light);
+  font-weight: var(--fw-med);
 }
 h5 {
   font-weight: 300;
@@ -138,4 +138,17 @@ main img {
 }
 .fcc__img img {
   box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.452);
+}
+
+.tech__blog ol{
+  list-style: disc;
+list-style-position: inside;
+padding-left: 32px;
+}
+.tech__blog ol li{
+  list-style: disc;
+
+}
+.tech__blog img:hover{
+  scale: 1.1
 }
