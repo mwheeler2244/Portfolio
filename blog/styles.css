@@ -140,9 +140,8 @@ main img {
   box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.452);
 }
 
-
-.tech__blog img:hover{
-  scale: 1.1
+.tech__blog img:hover {
+  scale: 1.1;
 }
 .facebook-share {
   background-color: #316ff6;
@@ -172,12 +171,10 @@ main img {
   margin-left: var(--margin-400);
   cursor: pointer;
 }
-.socials i
- {
+.socials i {
   color: white;
 }
-.socials a:hover{
-
+.socials a:hover {
   scale: 1.1;
 }
 .fcc__img {
@@ -191,28 +188,27 @@ main img {
 
 /*------------------------ DAY 2 -------------------------*/
 
-.tech__blog ol{
+.tech__blog ol {
   list-style: disc;
-list-style-position: inside;
-padding-left: 32px;
+  list-style-position: inside;
+  padding-left: 32px;
 }
-.tech__blog ol li{
+.tech__blog ol li {
   list-style: disc;
-
 }
-.tech__blog img:hover{
-  scale: 1.1
+.tech__blog img:hover {
+  scale: 1.1;
 }
-
 
 /*------------------------ DAY 1 CSS -------------------------*/
-.css-img{
+.css-img {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--gap-600);
   padding-bottom: var(--padding-700);
+  flex-wrap: wrap;
 }
-.css-img img{
+.css-img img {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.442);
 }
-
