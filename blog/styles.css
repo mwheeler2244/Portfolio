@@ -140,6 +140,57 @@ main img {
   box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.452);
 }
 
+
+.tech__blog img:hover{
+  scale: 1.1
+}
+.facebook-share {
+  background-color: #316ff6;
+}
+.twitter-share {
+  background-color: black;
+}
+.instagram-share {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+.linkedin-share {
+  background-color: #316ff6;
+}
+
+.fa-brands {
+  padding: 1rem;
+}
+.socials {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  color: white;
+  margin-left: var(--margin-400);
+  cursor: pointer;
+}
+.socials i
+ {
+  color: white;
+}
+.socials a:hover{
+
+  scale: 1.1;
+}
+.fcc__img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-600);
+}
+.fcc__img img {
+  box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.452);
+}
+
+/*------------------------ DAY 2 -------------------------*/
+
 .tech__blog ol{
   list-style: disc;
 list-style-position: inside;
@@ -152,3 +203,16 @@ padding-left: 32px;
 .tech__blog img:hover{
   scale: 1.1
 }
+
+
+/*------------------------ DAY 1 CSS -------------------------*/
+.css-img{
+  display: flex;
+  align-items: center;
+  gap: var(--gap-600);
+  padding-bottom: var(--padding-700);
+}
+.css-img img{
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.442);
+}
+
