@@ -536,6 +536,13 @@ button i {
   grid-template-rows: subgrid;
   grid-row: span 2;
 }
+.projects__btn{
+  display: flex;
+  gap:var(--gap-400);
+  
+  
+}
+
 
 /*=============== TRAVEL BLOG ===============*/
 .blog {
