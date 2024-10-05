@@ -851,6 +851,9 @@ footer .socials i:hover {
   .projects__box {
     grid-template-columns: 1fr;
   }
+  .hero__img{
+    background-attachment: scroll;
+  }
 }
 
 @media (max-width: 1100px) {
