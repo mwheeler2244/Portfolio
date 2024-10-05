@@ -191,7 +191,7 @@ nav .logo {
   color: var(--primary);
   font-size: var(--fs-300);
   text-decoration: none;
-  font-weight: 500;
+
   transition: 0.3s ease;
   color: white;
 }
@@ -536,13 +536,10 @@ button i {
   grid-template-rows: subgrid;
   grid-row: span 2;
 }
-.projects__btn{
+.projects__btn {
   display: flex;
-  gap:var(--gap-400);
-  
-  
+  gap: var(--gap-400);
 }
-
 
 /*=============== TRAVEL BLOG ===============*/
 .blog {
@@ -577,15 +574,14 @@ button i {
 }
 
 /*===================== TECH BLOG ===============*/
-.blog__container{
+.blog__container {
   margin-inline: auto;
 }
-.blog__subheader{
+.blog__subheader {
   padding-top: var(--padding-700);
   display: grid;
   justify-items: center;
   gap: var(--gap-400);
-  
 }
 
 .tech__blog .blog__card {
@@ -593,7 +589,6 @@ button i {
   align-items: center;
   gap: var(--gap-700);
   margin-top: var(--padding-700);
-
 }
 .tech__blog img {
   border-radius: 100vw;
@@ -626,7 +621,6 @@ button i {
 .contact__container h2 {
   padding-bottom: var(--padding-700);
 }
-
 
 input,
 select,
