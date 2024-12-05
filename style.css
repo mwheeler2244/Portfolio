@@ -281,7 +281,7 @@ nav .logo {
 }
 .btn__nav:hover,
 .btn:hover {
-  transform: scale(1.1);
+  transform: scale(1);
 }
 .btn__nav:focus,
 .btn:hover:focus {
