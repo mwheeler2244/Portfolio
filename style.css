@@ -517,6 +517,7 @@ button i {
 }
 .projects__img {
   max-width: 500px;
+  margin-inline: auto;
 }
 
 .projects__box {
@@ -555,6 +556,7 @@ button i {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 2;
+  margin-block: 0.5rem;
 }
 .projects__btn {
   display: flex;
@@ -860,6 +862,9 @@ footer .socials i:hover {
   }
   .hero__img {
     background-attachment: scroll;
+  }
+  .projects__img {
+    max-width: 300px;
   }
 }
 
