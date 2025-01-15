@@ -563,6 +563,40 @@ button i {
   gap: var(--gap-400);
 }
 
+/*=============== MORE PROJECTS ===============*/
+
+#more-projects {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#more-projects h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.more-projects__list {
+  list-style: none;
+  padding-block: 3rem;
+}
+
+.more-projects__list li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.more-projects__list li a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.more-projects__list li a:hover {
+  color: #005f99;
+  text-decoration: underline;
+}
+
 /*=============== TRAVEL BLOG ===============*/
 .blog {
   background-color: #f3f3f3;
