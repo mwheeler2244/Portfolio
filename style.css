@@ -251,6 +251,7 @@ nav .logo {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .btn {
@@ -538,7 +539,7 @@ button i {
   justify-items: start;
   gap: var(--gap-400);
   padding: var(--padding-600) var(--padding-600);
-
+  margin-top: 2rem;
   max-width: 60ch;
 }
 .project__card-text-details {
