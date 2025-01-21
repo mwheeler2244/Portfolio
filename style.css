@@ -107,7 +107,7 @@ span {
 .project__card-text-details ul li,
 .tab__box ul li,
 .header__sub ul li {
-  margin-left: 16px;
+  margin-left: 24px;
   list-style: disc;
   font-size: var(--fs-300);
 }
@@ -542,8 +542,8 @@ button i {
   margin-top: 2rem;
   max-width: 60ch;
 }
+
 .project__card-text-details {
-  padding-left: var(--padding-600);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--gap-600);
@@ -883,8 +883,15 @@ footer .socials i:hover {
   .projects__box:last-child .projects__card-text {
     grid-row: 2;
   }
+
   .blog img {
     margin-inline: auto;
+  }
+  .project__card-text {
+  }
+
+  .project__card-text h4 {
+    margin-bottom: 0.5rem;
   }
   .project__card-text-details {
     display: block;
