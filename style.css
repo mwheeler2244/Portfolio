@@ -532,7 +532,6 @@ button i {
 }
 .projects__card img {
   border-radius: 0;
-  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.233);
 }
 .projects__card-text {
   display: grid;
