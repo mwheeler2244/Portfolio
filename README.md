@@ -1,70 +1,99 @@
-# Portfolio
-
-Welcome to my portfolio repository! This repository showcases a collection of my work and projects as a front-end developer. Here, you'll find various web development projects, including personal, client, and real-world applications.
-
-## **Contents**
-
-- **[VR Headset E-Commerce](https://github.com/mwheeler2244/VR-Headset-E-Commerce):** A sample e-commerce site for virtual reality headsets demonstrating product listings, a shopping cart, and a checkout process. Built using HTML, CSS, JavaScript. Access the project's source code and details on [GitHub].
-- **[Travel Blog Wordpress](https://littletravelgirl.com):** Developed a professional website for travel influencer to showcase her travels.
-- **[Muay Thai in Phuket](http://www.muaythaiinphuket.com):** Discover the ultimate guide to training Muay Thai in Thailand! From top gyms to essential tips for first-time travelers, this blog dives deep into the heart of the sport in the country where it all began. Completed in August 2024.
-- **[Discover the Flavors of Thailand: 10 Must-Try Dishes from Every Region](http://www.discoverthaifood.com):** Thailand's cuisine reflects its diverse regions, from Northern curries and Northeastern salads to Central street foods and Southern seafood dishes. This guide highlights "10 Thai Dishes You Need to Try" from the North, Isaan, Central, and South. Completed in August 2024.
-
-### **Coding Blog**
-
-## **Technologies**
-
-- HTML
-- CSS
-- JavaScript
-- WordPress
-
-This portfolio includes projects built with a variety of technologies, such as:
-
-HTML, CSS, JavaScript
-WordPress
-Git & GitHub
-Responsive Design
-SEO Optimization
-
-- **Email:** mhwheeler87@gmail.com
-- **LinkedIn:** [Mike Wheeler](https://www.linkedin.com/in/michael-wheeler12/)
-- **Website:** [Mikewheelerdev.com](https://mikewheelerdev.com/)
-
----
-
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. Navigate to the project directory:
+
+   ```bash
+   cd portfolio-nextjs
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### Build for Production
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Export Static Site
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+src/
+├── app/
+│   ├── contact/
+│   │   └── page.tsx
+│   ├── projects/
+│   │   └── page.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── About.tsx
+│   ├── Blog.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── Navigation.tsx
+│   └── Projects.tsx
+public/
+├── assets/
+├── blog/
+└── Travel-Thailand/
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Interactive Navigation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Responsive mobile menu
+- Smooth scrolling to sections
+- Active state management
 
-## Deploy on Vercel
+### Dynamic Content
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Project showcases with live demos
+- Blog post listings
+- Contact form with validation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Performance Optimizations
+
+- Next.js Image optimization
+- Code splitting
+- SEO-friendly routing
+
+## Contact
+
+- **Email**: mwheeler.dev@gmail.com
+- **LinkedIn**: [michael-wheeler12](https://www.linkedin.com/in/michael-wheeler12/)
+- **GitHub**: [mwheeler2244](https://github.com/mwheeler2244)
+- **Twitter**: [@Michael68374214](https://x.com/Michael68374214)
+
+## License
+
+© 2025 Mike Wheeler. All rights reserved.
