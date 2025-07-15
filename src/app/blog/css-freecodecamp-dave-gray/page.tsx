@@ -1,3 +1,4 @@
+"use client";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -6,8 +7,18 @@ export default function CSSFreeCodeCampPost() {
   return (
     <>
       <Navigation />
+      {/* Local style for symmetrical width */}
+      <style jsx>{`
+        .blog-local-container {
+          max-width: 900px;
+          margin-left: auto;
+          margin-right: auto;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+      `}</style>
       <main className="section section-light">
-        <div className="container">
+        <div className="blog-local-container">
           {/* Back to Blog Link */}
           <Link
             href="/blog"
@@ -249,45 +260,6 @@ export default function CSSFreeCodeCampPost() {
             </ol>
 
             {/* Call to Action */}
-            <div className="blog-cta-section">
-              <h4
-                style={{
-                  fontSize: "1.5rem",
-                  fontWeight: "700",
-                  color: "var(--color-black)",
-                  marginBottom: "var(--space-4)",
-                  textTransform: "none",
-                }}
-              >
-                Ready to Master CSS?
-              </h4>
-              <p
-                style={{
-                  fontSize: "1rem",
-                  color: "var(--color-gray-600)",
-                  marginBottom: "var(--space-6)",
-                }}
-              >
-                Watch Dave Gray's comprehensive CSS course on freeCodeCamp and
-                level up your styling skills.
-              </p>
-              <a
-                href="https://www.youtube.com/watch?v=OXGznpKZ_sA&t=29451s"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-                style={{
-                  fontSize: "1rem",
-                  padding: "var(--space-4) var(--space-8)",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "var(--space-2)",
-                }}
-              >
-                <span>Watch the Course</span>
-                <i className="fa-solid fa-external-link-alt"></i>
-              </a>
-            </div>
 
             {/* Navigation */}
             <div className="blog-navigation">

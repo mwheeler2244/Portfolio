@@ -75,11 +75,10 @@ export default function ProjectsPage() {
 
           <p
             style={{
-              textAlign: "center",
               marginBottom: "4rem",
               color: "var(--color-gray-700)",
               maxWidth: "600px",
-              margin: "0 auto 4rem",
+              margin: "4rem 0",
             }}
           >
             A collection of projects showcasing my skills in web development,

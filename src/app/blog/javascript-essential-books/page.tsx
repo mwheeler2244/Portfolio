@@ -1,3 +1,4 @@
+"use client";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -235,45 +236,6 @@ export default function JavaScriptEssentialBooksPost() {
             </p>
 
             {/* Call to Action */}
-            <div className="blog-cta-section">
-              <h4
-                style={{
-                  fontSize: "1.5rem",
-                  fontWeight: "700",
-                  color: "var(--color-black)",
-                  marginBottom: "var(--space-4)",
-                  textTransform: "none",
-                }}
-              >
-                Ready to Dive Deeper?
-              </h4>
-              <p
-                style={{
-                  fontSize: "1rem",
-                  color: "var(--color-gray-600)",
-                  marginBottom: "var(--space-6)",
-                }}
-              >
-                Start with one of these essential JavaScript books and take your
-                coding skills to the next level.
-              </p>
-              <a
-                href="https://www.amazon.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-                style={{
-                  fontSize: "1rem",
-                  padding: "var(--space-4) var(--space-8)",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "var(--space-2)",
-                }}
-              >
-                <span>Shop Books</span>
-                <i className="fa-solid fa-external-link-alt"></i>
-              </a>
-            </div>
 
             {/* Navigation */}
             <div className="blog-navigation">

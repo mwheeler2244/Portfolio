@@ -50,9 +50,8 @@ export default function Blog() {
     <section id="blog" className="blog-section">
       <div className="container">
         <h2 style={{ marginBottom: "var(--space-4)" }}>
-          CODING
+          BLOGS
           <br />
-          <span className="text-accent">JOURNEY</span>
         </h2>
 
         <p
@@ -161,7 +160,7 @@ export default function Blog() {
               padding: "var(--space-4) var(--space-8)",
             }}
           >
-            <span>Read My Coding Blog</span>
+            <span>More Blogs</span>
             <i className="fa-solid fa-arrow-right"></i>
           </a>
         </div>

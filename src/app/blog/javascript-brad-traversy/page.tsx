@@ -1,3 +1,4 @@
+"use client";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -284,45 +285,6 @@ export default function JavaScriptBradTraversyPost() {
             </p>
 
             {/* Call to Action */}
-            <div className="blog-cta-section">
-              <h4
-                style={{
-                  fontSize: "1.5rem",
-                  fontWeight: "700",
-                  color: "var(--color-black)",
-                  marginBottom: "var(--space-4)",
-                  textTransform: "none",
-                }}
-              >
-                Ready to Master JavaScript?
-              </h4>
-              <p
-                style={{
-                  fontSize: "1rem",
-                  color: "var(--color-gray-600)",
-                  marginBottom: "var(--space-6)",
-                }}
-              >
-                Check out Brad Traversy's comprehensive JavaScript tutorials and
-                start building amazing projects.
-              </p>
-              <a
-                href="https://www.youtube.com/c/TraversyMedia"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-                style={{
-                  fontSize: "1rem",
-                  padding: "var(--space-4) var(--space-8)",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "var(--space-2)",
-                }}
-              >
-                <span>Visit Traversy Media</span>
-                <i className="fa-solid fa-external-link-alt"></i>
-              </a>
-            </div>
 
             {/* Navigation */}
             <div className="blog-navigation">
