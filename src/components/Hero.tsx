@@ -27,8 +27,6 @@ export default function Hero() {
         display: "flex",
         alignItems: "center",
         padding: "6rem 0 2rem 0",
-
-        background: "var(--color-beige)",
         position: "relative",
       }}
     >
