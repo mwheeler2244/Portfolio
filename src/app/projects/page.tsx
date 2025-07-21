@@ -1,139 +1,248 @@
+"use client";
+import React, { useEffect, useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import Image from "next/image";
-
-const allProjects = [
-  {
-    id: 1,
-    title: "AI Workout Generator",
-    description:
-      "A personalized workout app that leverages AI to create custom 30-minute routines. Users select muscle groups and receive tailored exercises powered by advanced language models.",
-    image: "/assets/linkss.png",
-    technologies: ["Next.js", "React", "PostgreSQL", "Prisma", "Clerk"],
-    liveDemo: "https://ai-exercise-builder.vercel.app",
-    github: "https://github.com/mwheeler2244/AI-Exercise-Builder",
-  },
-  {
-    id: 2,
-    title: "Networx",
-    description:
-      "A modern professional networking platform inspired by LinkedIn. Built using Next.js, React, and Tailwind CSS, it allows users to connect, share updates, and grow their professional presence with real-time interactions.",
-    image: "/assets/tackgoals-pic.png",
-    technologies: ["Next.js", "React", "Tailwind CSS"],
-    liveDemo: "https://networx-demo.vercel.app/",
-    github: "https://github.com/mwheeler2244/Networx",
-  },
-  {
-    id: 3,
-    title: "Discover Thailand Travel Guide",
-    description:
-      "A comprehensive travel blog showcasing the best destinations, culture, and experiences in Thailand with interactive features and beautiful imagery.",
-    image: "/assets/blog2.jpg",
-    technologies: ["HTML5", "CSS3", "JavaScript"],
-    liveDemo: "/Travel-Thailand/index.html",
-    github: "https://github.com/mwheeler2244/Travel-Thailand",
-  },
-  {
-    id: 4,
-    title: "Social Media Marketing Website",
-    description:
-      "A professional website for a social media marketing company featuring modern design, service showcases, and client testimonials.",
-    image: "/assets/moreProjects2.jpg",
-    technologies: ["WordPress", "CSS3"],
-    liveDemo: "https://aliceblue-tapir-215849.hostingersite.com/",
-    github: "https://github.com/mwheeler2244/Heartland-Co",
-  },
-  {
-    id: 5,
-    title: "VR Headset E-Commerce Store",
-    description:
-      "A fully functional e-commerce website for VR headsets with product showcases, shopping cart functionality, and responsive design.",
-    image: "/assets/heroVR.jpg",
-    technologies: ["HTML5", "CSS3", "JavaScript"],
-    liveDemo: "https://github.com/mwheeler2244/VR-Headset-E-Commerce",
-    github: "https://github.com/mwheeler2244/VR-Headset-E-Commerce",
-  },
-  {
-    id: 6,
-    title: "WordPress Travel Blog",
-    description:
-      "A travel blog built with WordPress showcasing journey experiences with custom themes and dynamic content management.",
-    image: "/assets/travelnamfon.jpg",
-    technologies: ["WordPress", "PHP", "MySQL"],
-    liveDemo: "https://littlegirljourney.com",
-    github: null,
-  },
-];
 
 export default function ProjectsPage() {
+  const [projects, setProjects] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    async function fetchRepos() {
+      setLoading(true);
+      setError("");
+      try {
+        const res = await fetch(
+          "https://api.github.com/users/mwheeler2244/repos?sort=updated&per_page=14"
+        );
+        if (!res.ok) throw new Error("Failed to fetch repos");
+        const data = await res.json();
+        setProjects(data);
+      } catch (err: any) {
+        setError("Could not load projects from GitHub.");
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchRepos();
+  }, []);
+
   return (
     <>
-      <Navigation />
-      <main className="section" style={{ paddingTop: "8rem" }}>
-        <div className="container">
-          <h1 className="section-title">All Projects</h1>
+      <div className="container" style={{}}>
+        <Navigation />
+      </div>
+      <main
+        className="section"
+        style={{
+          background: "var(--color-beige)",
+          minHeight: "100vh",
+        }}
+      >
+        <div
+          className="container"
+          style={{
+            padding: "0 1.5rem",
+          }}
+        >
+          <header style={{ textAlign: "center", marginBottom: "3.5rem" }}>
+            <h1
+              style={{
+                fontWeight: 800,
+                fontSize: "2.5rem",
+                marginBottom: "1.1rem",
+                letterSpacing: "-0.03em",
+                color: "#111827",
+                lineHeight: 1.1,
+              }}
+            >
+              All Projects
+            </h1>
+            <p
+              style={{
+                color: "#6b7280",
+                fontSize: "1.15rem",
+                lineHeight: 1.7,
+                fontWeight: 400,
+                maxWidth: 520,
+                margin: "0 auto",
+              }}
+            >
+              A curated selection of my latest work in web development, fetched
+              live from my GitHub profile.
+            </p>
+          </header>
 
-          <p
-            style={{
-              marginBottom: "4rem",
-              color: "var(--color-gray-700)",
-              maxWidth: "600px",
-              margin: "4rem 0",
-            }}
-          >
-            A collection of projects showcasing my skills in web development,
-            from AI-powered applications to responsive websites and e-commerce
-            solutions.
-          </p>
+          {loading && (
+            <p style={{ textAlign: "center" }}>Loading projects...</p>
+          )}
+          {error && (
+            <p style={{ color: "red", textAlign: "center" }}>{error}</p>
+          )}
 
-          <div className="projects-grid">
-            {allProjects.map((project) => (
-              <div key={project.id} className="project-card">
-                <div className="project-image">
-                  <Image
-                    src={project.image}
-                    alt={`${project.title} Screenshot`}
-                    width={600}
-                    height={400}
-                  />
-                </div>
-
-                <div className="project-content">
-                  <h3>{project.title}</h3>
-                  <p className="project-description">{project.description}</p>
-
-                  <div className="tech-tags">
-                    {project.technologies.map((tech, index) => (
-                      <span key={index} className="tech-tag">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="project-links">
-                    <a
-                      href={project.liveDemo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-primary"
+          {!loading && !error && (
+            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+              {projects
+                .filter(
+                  (project) =>
+                    project.name.toLowerCase() !== "portfolio" &&
+                    project.name.toLowerCase() !== "mwheeler2244" &&
+                    project.name.toLowerCase() !== "service-swap"
+                )
+                .map((project, idx) => (
+                  <li
+                    key={project.id}
+                    style={{
+                      padding: idx === 0 ? "0 0 2.5rem 0" : "2.5rem 0",
+                      borderTop: idx === 0 ? "none" : "1px solid #e5e7eb",
+                      margin: 0,
+                      transition: "background 0.2s cubic-bezier(.4,0,.2,1)",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "baseline",
+                        justifyContent: "space-between",
+                        gap: 16,
+                      }}
                     >
-                      Live Demo
-                    </a>
-                    {project.github && (
+                      <h2
+                        style={{
+                          fontSize: "1.45rem",
+                          fontWeight: 700,
+                          margin: 0,
+                          color: "#111827",
+                          letterSpacing: "-0.01em",
+                          lineHeight: 1.2,
+                        }}
+                      >
+                        {project.name}
+                      </h2>
+                      <span
+                        style={{
+                          fontSize: "0.92rem",
+                          color: "#cbd5e1",
+                          fontWeight: 600,
+                          letterSpacing: "0.05em",
+                          minWidth: 32,
+                          textAlign: "right",
+                        }}
+                      >
+                        {String(idx + 1).padStart(2, "0")}
+                      </span>
+                    </div>
+                    <p
+                      style={{
+                        color: "#374151",
+                        margin: "0.7rem 0 1.1rem 0",
+                        fontSize: "1.08rem",
+                        lineHeight: 1.6,
+                        fontWeight: 400,
+                      }}
+                    >
+                      {project.description || "No description provided."}
+                    </p>
+
+                    {/* Technical details section */}
+                    <div
+                      style={{
+                        marginBottom: "1.1rem",
+                        color: "#6b7280",
+                        fontSize: "0.98rem",
+                        fontWeight: 400,
+                        display: "flex",
+                        flexWrap: "wrap",
+                        gap: "1.2rem",
+                      }}
+                    >
+                      <span>
+                        <strong>Language:</strong> {project.language || "N/A"}
+                      </span>
+                      <span>
+                        <strong>Framework:</strong> Next.js
+                      </span>
+                      <span>
+                        <strong>Stars:</strong> {project.stargazers_count}
+                      </span>
+                      <span>
+                        <strong>Forks:</strong> {project.forks_count}
+                      </span>
+                      <span>
+                        <strong>Issues:</strong> {project.open_issues_count}
+                      </span>
+                      {project.license &&
+                        project.license.spdx_id !== "NOASSERTION" && (
+                          <span>
+                            <strong>License:</strong> {project.license.spdx_id}
+                          </span>
+                        )}
+                      <span>
+                        <strong>Last updated:</strong>{" "}
+                        {new Date(project.updated_at).toLocaleDateString()}
+                      </span>
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        gap: "1.5rem",
+                        alignItems: "center",
+                      }}
+                    >
+                      {project.homepage && (
+                        <a
+                          href={project.homepage}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            color: "#2563eb",
+                            textDecoration: "underline",
+                            fontWeight: 600,
+                            fontSize: "1rem",
+                            padding: 0,
+                            background: "none",
+                            border: "none",
+                            transition: "color 0.18s cubic-bezier(.4,0,.2,1)",
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.color = "#1d4ed8";
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.color = "#2563eb";
+                          }}
+                        >
+                          Live Demo
+                        </a>
+                      )}
                       <a
-                        href={project.github}
+                        href={project.html_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-secondary"
+                        style={{
+                          color: "#64748b",
+                          textDecoration: "underline",
+                          fontWeight: 500,
+                          fontSize: "1rem",
+                          padding: 0,
+                          background: "none",
+                          border: "none",
+                          transition: "color 0.18s cubic-bezier(.4,0,.2,1)",
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.color = "#111827";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "#64748b";
+                        }}
                       >
                         View Code
                       </a>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+                    </div>
+                  </li>
+                ))}
+            </ul>
+          )}
         </div>
       </main>
       <Footer />
