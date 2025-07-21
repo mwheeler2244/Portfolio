@@ -57,7 +57,7 @@ export default function ContactPage() {
         setFormStatus("error");
         setMessage("Something went wrong. Please try again.");
       }
-    } catch (error) {
+    } catch {
       setFormStatus("error");
       setMessage("Failed to send message. Please try again.");
     }

@@ -1,19 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function Hero() {
-  const handleScrollDown = () => {
-    const element = document.querySelector("#about");
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-
   return (
     <section
       className="hero"

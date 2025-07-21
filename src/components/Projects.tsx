@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import Image from "next/image";
 
 export default function Projects() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -230,7 +231,12 @@ export default function Projects() {
 
                   {/* Project Image */}
                   <div className="project-image-card">
-                    <img src={project.image} alt={project.title} />
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={400}
+                      height={300}
+                    />
                     <div className="project-overlay-card">
                       <div className="project-links-card">
                         <a
@@ -339,8 +345,8 @@ export default function Projects() {
               <p className="cta-description">
                 Ready to build something extraordinary? I specialize in creating
                 modern, scalable applications that drive results. From concept
-                to deployment, let's bring your ideas to life with cutting-edge
-                technology.
+                to deployment, let&apos;s bring your ideas to life with
+                cutting-edge technology.
               </p>
 
               <div className="cta-stats">

@@ -20,7 +20,7 @@ export default function About() {
               { key: "clients", end: 8, duration: 1800 },
             ];
 
-            stats.forEach(({ key, end, duration }) => {
+            stats.forEach(({ end, duration }) => {
               let start = 0;
               const increment = end / (duration / 16);
 
