@@ -158,7 +158,6 @@ export default function ProjectsPage() {
                     >
                       {project.description || "No description provided."}
                     </p>
-
                     {/* Technical details section */}
                     <div
                       style={{

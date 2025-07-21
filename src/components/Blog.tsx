@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export default function Blog() {
-  const [showAllPosts, setShowAllPosts] = useState(false);
+  const [showAllPosts] = useState(false);
 
   const blogPosts = [
     {
@@ -68,7 +68,7 @@ export default function Blog() {
         </p>
 
         <div className="blog-list" style={{ maxWidth: "none" }}>
-          {displayedPosts.map((post, index) => (
+          {displayedPosts.map((post) => (
             <article key={post.id} className="blog-list-item">
               <div className="blog-list-left">
                 {post.badge && (

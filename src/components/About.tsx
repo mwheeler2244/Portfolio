@@ -103,8 +103,8 @@ export default function About() {
                 cross-functional teams in international settings.
               </p>
               <p>
-                I'm passionate about creating user-friendly web experiences and
-                continuously expanding my knowledge in cutting-edge
+                I&apos;m passionate about creating user-friendly web experiences
+                and continuously expanding my knowledge in cutting-edge
                 technologies. This drive for learning and improvement reflects
                 in every project I undertake.
               </p>

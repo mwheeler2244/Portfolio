@@ -99,7 +99,7 @@ export default function ContactPage() {
             <h1>
               <span className="contact-title-highlight">Get In Touch</span>
             </h1>
-            <p>Have a project in mind? I'd love to hear from you.</p>
+            <p>Have a project in mind? I&apos;d love to hear from you.</p>
 
             <form
               onSubmit={handleSubmit}
