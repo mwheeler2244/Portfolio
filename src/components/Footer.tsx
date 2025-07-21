@@ -4,15 +4,6 @@ import { useState } from "react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const [emailSubscribed, setEmailSubscribed] = useState(false);
-  const [email, setEmail] = useState("");
-
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle newsletter signup logic here
-    setEmailSubscribed(true);
-    setEmail("");
-  };
 
   return (
     <footer className="footer-enhanced">

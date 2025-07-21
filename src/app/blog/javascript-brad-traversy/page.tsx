@@ -141,7 +141,8 @@ export default function JavaScriptBradTraversyPost() {
                 textTransform: "none",
               }}
             >
-              What You'll Learn from Brad Traversy's JavaScript Tutorials
+              What You&apos;ll Learn from Brad Traversy&apos;s JavaScript
+              Tutorials
             </h3>
 
             <ol

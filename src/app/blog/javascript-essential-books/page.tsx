@@ -126,8 +126,8 @@ export default function JavaScriptEssentialBooksPost() {
                 <strong style={{ color: "var(--color-black)" }}>
                   &quot;JavaScript: The Good Parts&quot; by Douglas Crockford
                 </strong>
-                <br />A classic that focuses on JavaScript's strengths and key
-                features, helping developers write clean and efficient code.
+                <br />A classic that focuses on JavaScript&apos;s strengths and
+                key features, helping developers write clean and efficient code.
               </li>
               <li style={{ marginBottom: "var(--space-6)" }}>
                 <strong style={{ color: "var(--color-black)" }}>

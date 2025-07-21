@@ -1,14 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Hero() {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
-
   const handleScrollDown = () => {
     const element = document.querySelector("#about");
     if (element) {
@@ -101,9 +96,11 @@ export default function Hero() {
                 position: "relative",
               }}
             >
-              <img
+              <Image
                 src="/assets/portfolioProfile.jpg"
                 alt="Mike Wheeler"
+                width={300}
+                height={400}
                 style={{
                   width: "100%",
                   height: "100%",

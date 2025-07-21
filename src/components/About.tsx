@@ -4,11 +4,6 @@ import { useEffect, useState, useRef } from "react";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
-  const [statNumbers, setStatNumbers] = useState({
-    projects: 0,
-    years: 0,
-    clients: 0,
-  });
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -32,13 +27,13 @@ export default function About() {
               const timer = setInterval(() => {
                 start += increment;
                 if (start >= end) {
-                  setStatNumbers((prev) => ({ ...prev, [key]: end }));
+                  // setStatNumbers((prev) => ({ ...prev, [key]: end })); // This line was removed
                   clearInterval(timer);
                 } else {
-                  setStatNumbers((prev) => ({
-                    ...prev,
-                    [key]: Math.floor(start),
-                  }));
+                  // setStatNumbers((prev) => ({ // This line was removed
+                  //   ...prev,
+                  //   [key]: Math.floor(start),
+                  // }));
                 }
               }, 16);
             });

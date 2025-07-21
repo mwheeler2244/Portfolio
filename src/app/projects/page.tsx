@@ -3,8 +3,22 @@ import React, { useEffect, useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+type Project = {
+  id: number;
+  name: string;
+  description: string | null;
+  language: string | null;
+  stargazers_count: number;
+  forks_count: number;
+  open_issues_count: number;
+  license?: { spdx_id: string };
+  updated_at: string;
+  homepage?: string;
+  html_url: string;
+};
+
 export default function ProjectsPage() {
-  const [projects, setProjects] = useState<any[]>([]);
+  const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
@@ -19,7 +33,7 @@ export default function ProjectsPage() {
         if (!res.ok) throw new Error("Failed to fetch repos");
         const data = await res.json();
         setProjects(data);
-      } catch (err: any) {
+      } catch {
         setError("Could not load projects from GitHub.");
       } finally {
         setLoading(false);
