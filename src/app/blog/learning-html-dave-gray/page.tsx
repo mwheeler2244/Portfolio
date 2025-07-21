@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function LearningHTMLDaveGrayPost() {
   return (
@@ -72,7 +73,7 @@ export default function LearningHTMLDaveGrayPost() {
                 marginBottom: "var(--space-8)",
               }}
             >
-              Finding a Good YouTube Tutorial - Dave Gray's Channel
+              Finding a Good YouTube Tutorial - Dave Gray&apos;s Channel
             </h2>
           </header>
 
@@ -86,9 +87,11 @@ export default function LearningHTMLDaveGrayPost() {
               borderRadius: "0",
             }}
           >
-            <img
+            <Image
               src="/blog/assets/David grey main page.png"
               alt="Dave Gray YouTube Channel"
+              width={900}
+              height={400}
               style={{
                 width: "100%",
                 height: "100%",
@@ -111,7 +114,7 @@ export default function LearningHTMLDaveGrayPost() {
               lessons are a great introduction to HTML basics. For Day 2, I
               decided to explore a different learning method by turning to
               YouTube for more dynamic and hands-on tutorials. One YouTube
-              channel that stood out to me is David Gray's.
+              channel that stood out to me is David Gray&apos;s.
             </p>
 
             <h3
@@ -182,7 +185,7 @@ export default function LearningHTMLDaveGrayPost() {
                 textTransform: "none",
               }}
             >
-              Discovering David Gray's YouTube HTML Course
+              Discovering David Gray&apos;s YouTube HTML Course
             </h3>
 
             <ol
@@ -199,20 +202,20 @@ export default function LearningHTMLDaveGrayPost() {
                   Beginner-Friendly Approach
                 </strong>
                 <br />
-                David Gray's tutorials start from the very basics. He introduces
-                HTML concepts in a way that is approachable, even for someone
-                who has no prior coding experience. He takes the time to explain
-                each element, tag, and concept with practical examples, allowing
-                viewers to follow along as he codes in real time.
+                David Gray&apos;s tutorials start from the very basics. He
+                introduces HTML concepts in a way that is approachable, even for
+                someone who has no prior coding experience. He takes the time to
+                explain each element, tag, and concept with practical examples,
+                allowing viewers to follow along as he codes in real time.
               </li>
               <li style={{ marginBottom: "var(--space-6)" }}>
                 <strong style={{ color: "var(--color-black)" }}>
                   Real-World Projects
                 </strong>
                 <br />
-                What I love about this course is that it doesn't just focus on
-                theoretical knowledge. He teaches you how to apply HTML in
-                real-world projects. For example, you'll learn how to build
+                What I love about this course is that it doesn&apos;t just focus
+                on theoretical knowledge. He teaches you how to apply HTML in
+                real-world projects. For example, you&apos;ll learn how to build
                 basic web pages from scratch, including creating headers,
                 paragraphs, links, images, and lists. This kind of hands-on
                 practice is crucial for solidifying your understanding of HTML.
@@ -226,18 +229,19 @@ export default function LearningHTMLDaveGrayPost() {
                 David ensures that he breaks down every step. You can pause,
                 rewind, or replay sections as needed. This flexibility allows
                 you to move at your own pace, which is especially helpful if
-                you're juggling HTML learning with other commitments.
+                you&apos;re juggling HTML learning with other commitments.
               </li>
               <li style={{ marginBottom: "var(--space-6)" }}>
                 <strong style={{ color: "var(--color-black)" }}>
                   Practical Tips and Best Practices
                 </strong>
                 <br />
-                Throughout the course, David doesn't just teach you how to write
-                code; he also provides practical tips on coding conventions and
-                best practices. For example, he explains the importance of
-                structuring your HTML code neatly and using semantic elements to
-                improve your website's accessibility and SEO.
+                Throughout the course, David doesn&apos;t just teach you how to
+                write code; he also provides practical tips on coding
+                conventions and best practices. For example, he explains the
+                importance of structuring your HTML code neatly and using
+                semantic elements to improve your website&apos;s accessibility
+                and SEO.
               </li>
             </ol>
 
@@ -253,9 +257,11 @@ export default function LearningHTMLDaveGrayPost() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
+                <Image
                   src="/blog/assets/David grey html.png"
                   alt="Dave Gray HTML Course Playlist"
+                  width={600}
+                  height={400}
                   style={{
                     maxWidth: "100%",
                     height: "auto",

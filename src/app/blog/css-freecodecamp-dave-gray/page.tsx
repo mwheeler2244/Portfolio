@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function CSSFreeCodeCampPost() {
   return (
@@ -96,9 +97,11 @@ export default function CSSFreeCodeCampPost() {
               borderRadius: "0",
             }}
           >
-            <img
+            <Image
               src="/blog/assets/blogCSS-2.jpg"
               alt="CSS Full Course on freeCodeCamp"
+              width={900}
+              height={400}
               style={{
                 width: "100%",
                 height: "100%",
@@ -118,9 +121,9 @@ export default function CSSFreeCodeCampPost() {
               }}
             >
               Highlighting one of the best free CSS learning resources
-              available: the CSS Full Course on freeCodeCamp's YouTube channel,
-              instructed by Dave Gray. This comprehensive course spans over 8
-              hours and is perfect for anyone looking to master CSS, from
+              available: the CSS Full Course on freeCodeCamp&apos;s YouTube
+              channel, instructed by Dave Gray. This comprehensive course spans
+              over 8 hours and is perfect for anyone looking to master CSS, from
               beginners to those wanting to solidify their knowledge.
             </p>
 
@@ -134,7 +137,7 @@ export default function CSSFreeCodeCampPost() {
                 textTransform: "none",
               }}
             >
-              What You'll Learn from Dave Gray's CSS Full Course
+              What You&apos;ll Learn from Dave Gray&apos;s CSS Full Course
             </h3>
 
             <ol
@@ -153,16 +156,16 @@ export default function CSSFreeCodeCampPost() {
                 <br />
                 Dave starts with the essentials—what CSS is and how to link it
                 to HTML files. He explains selectors, properties, and values in
-                a way that's easy to follow, making it a great entry point for
-                beginners.
+                a way that&apos;s easy to follow, making it a great entry point
+                for beginners.
               </li>
               <li style={{ marginBottom: "var(--space-6)" }}>
                 <strong style={{ color: "var(--color-black)" }}>
                   Text Styling
                 </strong>
                 <br />
-                You'll explore different ways to style text, learning how to
-                modify fonts, sizes, weights, and colors. Dave shows how to
+                You&apos;ll explore different ways to style text, learning how
+                to modify fonts, sizes, weights, and colors. Dave shows how to
                 apply custom fonts to your website using web fonts, enhancing
                 the visual appeal of your pages.
               </li>
@@ -192,10 +195,10 @@ export default function CSSFreeCodeCampPost() {
                   CSS Animations and Transitions
                 </strong>
                 <br />
-                If you're looking to make your websites more interactive, Dave
-                covers CSS animations and transitions. You'll learn how to
-                create smooth effects that improve user experience, from hover
-                effects to keyframe animations.
+                If you&apos;re looking to make your websites more interactive,
+                Dave covers CSS animations and transitions. You&apos;ll learn
+                how to create smooth effects that improve user experience, from
+                hover effects to keyframe animations.
               </li>
               <li style={{ marginBottom: "var(--space-6)" }}>
                 <strong style={{ color: "var(--color-black)" }}>
@@ -203,9 +206,9 @@ export default function CSSFreeCodeCampPost() {
                 </strong>
                 <br />
                 Throughout the course, Dave emphasizes practical projects.
-                You'll code along with him, building real-world designs and
-                applying the concepts you've learned in real-time. This hands-on
-                approach helps solidify your CSS skills.
+                You&apos;ll code along with him, building real-world designs and
+                applying the concepts you&apos;ve learned in real-time. This
+                hands-on approach helps solidify your CSS skills.
               </li>
             </ol>
 
@@ -219,7 +222,7 @@ export default function CSSFreeCodeCampPost() {
                 textTransform: "none",
               }}
             >
-              Why Dave Gray's Course Stands Out
+              Why Dave Gray&apos;s Course Stands Out
             </h3>
 
             <ol
@@ -244,7 +247,7 @@ export default function CSSFreeCodeCampPost() {
                   Free and Accessible
                 </strong>
                 <br />
-                As part of freeCodeCamp's mission, this entire course is
+                As part of freeCodeCamp&apos;s mission, this entire course is
                 completely free and available on YouTube with no ads or
                 paywalls.
               </li>

@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function CSSKevinPowellPost() {
   return (
@@ -86,9 +87,11 @@ export default function CSSKevinPowellPost() {
               borderRadius: "0",
             }}
           >
-            <img
+            <Image
               src="/blog/assets/Kevin Powell home.png"
               alt="Kevin Powell YouTube Channel"
+              width={900}
+              height={400}
               style={{
                 width: "100%",
                 height: "100%",
@@ -110,9 +113,9 @@ export default function CSSKevinPowellPost() {
               Kevin Powell might just be the best CSS instructor on YouTube. His
               deep knowledge, combined with his easy-to-understand teaching
               techniques, makes his tutorials a true gem for anyone learning web
-              design. As part of my ongoing series on CSS educators, let's dive
-              into why Kevin's approach stands out and how his tutorials have
-              helped me grasp CSS fundamentals and beyond.
+              design. As part of my ongoing series on CSS educators, let&apos;s
+              dive into why Kevin&apos;s approach stands out and how his
+              tutorials have helped me grasp CSS fundamentals and beyond.
             </p>
 
             <p
@@ -123,11 +126,12 @@ export default function CSSKevinPowellPost() {
                 color: "var(--color-gray-600)",
               }}
             >
-              Kevin Powell is the perfect starting point for this series. He's
-              known for making CSS concepts easy to understand and providing
-              valuable tips on creating responsive, beautifully designed
-              websites. Whether you're a beginner or looking to refine your
-              skills, his YouTube channel has something for everyone.
+              Kevin Powell is the perfect starting point for this series.
+              He&apos;s known for making CSS concepts easy to understand and
+              providing valuable tips on creating responsive, beautifully
+              designed websites. Whether you&apos;re a beginner or looking to
+              refine your skills, his YouTube channel has something for
+              everyone.
             </p>
 
             <h3
@@ -157,11 +161,11 @@ export default function CSSKevinPowellPost() {
                   Beginner-Friendly and Advanced Content
                 </strong>
                 <br />
-                Kevin's tutorials cater to all levels of learners. Whether
-                you're a complete beginner or an intermediate coder looking to
-                sharpen your skills, there's content for everyone. He walks you
-                through the basics like selectors, properties, and the box
-                model, but he also delves into more advanced topics like CSS
+                Kevin&apos;s tutorials cater to all levels of learners. Whether
+                you&apos;re a complete beginner or an intermediate coder looking
+                to sharpen your skills, there&apos;s content for everyone. He
+                walks you through the basics like selectors, properties, and the
+                box model, but he also delves into more advanced topics like CSS
                 Grid, Flexbox, and animations.
               </li>
               <li style={{ marginBottom: "var(--space-6)" }}>
@@ -169,8 +173,8 @@ export default function CSSKevinPowellPost() {
                   Practical, Real-World Projects
                 </strong>
                 <br />
-                One of the things I love most about Kevin's tutorials is the
-                focus on practical projects. Instead of just explaining
+                One of the things I love most about Kevin&apos;s tutorials is
+                the focus on practical projects. Instead of just explaining
                 concepts, he shows you how to apply them. From creating
                 beautiful navigation menus to designing responsive websites, you
                 can follow along and build projects that you can use in your own
@@ -216,22 +220,22 @@ export default function CSSKevinPowellPost() {
                   Mastering CSS Flexbox
                 </strong>
                 <br />
-                Flexbox is often seen as confusing for beginners, but Kevin's
-                step-by-step explanations make it easy to grasp. His tutorials
-                on Flexbox are super clear, and after following them, I finally
-                felt confident using Flexbox in my own projects.
+                Flexbox is often seen as confusing for beginners, but
+                Kevin&apos;s step-by-step explanations make it easy to grasp.
+                His tutorials on Flexbox are super clear, and after following
+                them, I finally felt confident using Flexbox in my own projects.
               </li>
               <li style={{ marginBottom: "var(--space-6)" }}>
                 <strong style={{ color: "var(--color-black)" }}>
                   Responsive Web Design with & WITHOUT Media Queries
                 </strong>
                 <br />
-                One of Kevin's insights that has always resonated with me is
-                when he said, "Websites naturally want to be responsive." By
-                this, he means that websites are inherently flexible, and the
-                more we impose strict heights, widths, and other constraints,
-                the more we disrupt that natural responsiveness, often creating
-                unnecessary complications.
+                One of Kevin&apos;s insights that has always resonated with me
+                is when he said, &quot;Websites naturally want to be
+                responsive.&quot; By this, he means that websites are inherently
+                flexible, and the more we impose strict heights, widths, and
+                other constraints, the more we disrupt that natural
+                responsiveness, often creating unnecessary complications.
               </li>
               <li style={{ marginBottom: "var(--space-6)" }}>
                 <strong style={{ color: "var(--color-black)" }}>
@@ -253,9 +257,11 @@ export default function CSSKevinPowellPost() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
+                  <Image
                     src="/blog/assets/Kevin Powell flexbox.png"
                     alt="Kevin Powell Flexbox Tutorials"
+                    width={600}
+                    height={400}
                     style={{
                       width: "100%",
                       height: "auto",
@@ -271,9 +277,11 @@ export default function CSSKevinPowellPost() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
+                  <Image
                     src="/blog/assets/Kevin powell responsive.png"
                     alt="Kevin Powell Responsive Design"
+                    width={600}
+                    height={400}
                     style={{
                       width: "100%",
                       height: "auto",
@@ -289,9 +297,11 @@ export default function CSSKevinPowellPost() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
+                  <Image
                     src="/blog/assets/Kevin Powell grid.png"
                     alt="Kevin Powell CSS Grid"
+                    width={600}
+                    height={400}
                     style={{
                       width: "100%",
                       height: "auto",
@@ -324,9 +334,9 @@ export default function CSSKevinPowellPost() {
                 color: "var(--color-gray-600)",
               }}
             >
-              That's my current take on learning CSS with the help of Kevin
-              Powell's YouTube channel. CSS has a lot of deep layers that take
-              time to learn. I would recommend spending at least a month
+              That&apos;s my current take on learning CSS with the help of Kevin
+              Powell&apos;s YouTube channel. CSS has a lot of deep layers that
+              take time to learn. I would recommend spending at least a month
               dedicated to only CSS. Kevin has plenty of tutorials to keep you
               busy for that week. An important thing to remember is CSS is
               always improving, there is a lot to learn, so take your time and

@@ -115,7 +115,7 @@ export default function JavaScriptEssentialBooksPost() {
             >
               <li style={{ marginBottom: "var(--space-6)" }}>
                 <strong style={{ color: "var(--color-black)" }}>
-                  "Eloquent JavaScript" by Marijn Haverbeke
+                  &quot;Eloquent JavaScript&quot; by Marijn Haverbeke
                 </strong>
                 <br />
                 An excellent introduction to JavaScript, this book covers
@@ -124,14 +124,15 @@ export default function JavaScriptEssentialBooksPost() {
               </li>
               <li style={{ marginBottom: "var(--space-6)" }}>
                 <strong style={{ color: "var(--color-black)" }}>
-                  "JavaScript: The Good Parts" by Douglas Crockford
+                  &quot;JavaScript: The Good Parts&quot; by Douglas Crockford
                 </strong>
                 <br />A classic that focuses on JavaScript's strengths and key
                 features, helping developers write clean and efficient code.
               </li>
               <li style={{ marginBottom: "var(--space-6)" }}>
                 <strong style={{ color: "var(--color-black)" }}>
-                  "You Don't Know JS (YDKJS) Series" by Kyle Simpson
+                  &quot;You Don&apos;t Know JS (YDKJS) Series&quot; by Kyle
+                  Simpson
                 </strong>
                 <br />
                 This series dives deep into the core mechanics of JavaScript,
@@ -140,7 +141,7 @@ export default function JavaScriptEssentialBooksPost() {
               </li>
               <li style={{ marginBottom: "var(--space-6)" }}>
                 <strong style={{ color: "var(--color-black)" }}>
-                  "JavaScript: The Definitive Guide" by David Flanagan
+                  &quot;JavaScript: The Definitive Guide&quot; by David Flanagan
                 </strong>
                 <br />A comprehensive guide for both beginners and advanced
                 developers, covering all aspects of JavaScript with real-world
@@ -148,8 +149,8 @@ export default function JavaScriptEssentialBooksPost() {
               </li>
               <li style={{ marginBottom: "var(--space-6)" }}>
                 <strong style={{ color: "var(--color-black)" }}>
-                  "JavaScript and JQuery: Interactive Front-End Web Development"
-                  by Jon Duckett
+                  &quot;JavaScript and JQuery: Interactive Front-End Web
+                  Development&quot; by Jon Duckett
                 </strong>
                 <br />
                 Perfect for visual learners, this book combines JavaScript and

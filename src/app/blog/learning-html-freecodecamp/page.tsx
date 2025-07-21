@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function LearningHTMLBlogPost() {
   return (
@@ -87,9 +88,11 @@ export default function LearningHTMLBlogPost() {
               borderRadius: "0",
             }}
           >
-            <img
+            <Image
               src="/blog/assets/fcchero.jpg"
               alt="FreeCodeCamp HTML Course"
+              width={900}
+              height={400}
               style={{
                 width: "100%",
                 height: "100%",
@@ -135,15 +138,15 @@ export default function LearningHTMLBlogPost() {
                 color: "var(--color-gray-600)",
               }}
             >
-              FreeCodeCamp's HTML curriculum is designed to be interactive and
-              hands-on. You'll start with the basics, learning how to structure
-              a web page using various HTML elements like headings, paragraphs,
-              links, and lists. The course provides a clear understanding of the
-              syntax and semantics of HTML, allowing you to create
-              well-structured documents. One of the standout features of
+              FreeCodeCamp&apos;s HTML curriculum is designed to be interactive
+              and hands-on. You&apos;ll start with the basics, learning how to
+              structure a web page using various HTML elements like headings,
+              paragraphs, links, and lists. The course provides a clear
+              understanding of the syntax and semantics of HTML, allowing you to
+              create well-structured documents. One of the standout features of
               FreeCodeCamp is its project-based approach. As you progress,
-              you'll have the opportunity to apply what you've learned by
-              building real projects. This not only reinforces your
+              you&apos;ll have the opportunity to apply what you&apos;ve learned
+              by building real projects. This not only reinforces your
               understanding but also helps you create a portfolio of work that
               showcases your new skills. Projects include creating a personal
               portfolio page, a survey form, and even a tribute page, which all
@@ -153,9 +156,11 @@ export default function LearningHTMLBlogPost() {
             {/* Image Gallery */}
             <div className="blog-image-gallery">
               <div style={{ flex: "1", minWidth: "250px" }}>
-                <img
+                <Image
                   src="/blog/assets/fccCat.jpg"
                   alt="FreeCodeCamp Cat Project"
+                  width={600}
+                  height={400}
                   style={{
                     width: "100%",
                     height: "auto",
@@ -165,9 +170,11 @@ export default function LearningHTMLBlogPost() {
                 />
               </div>
               <div style={{ flex: "1", minWidth: "250px" }}>
-                <img
+                <Image
                   src="/blog/assets/fccIntro.jpg"
                   alt="FreeCodeCamp Introduction"
+                  width={600}
+                  height={400}
                   style={{
                     width: "100%",
                     height: "auto",
@@ -202,7 +209,7 @@ export default function LearningHTMLBlogPost() {
               The interactive coding environment allows you to write and test
               your HTML code in real-time. This immediate feedback is invaluable
               as you learn, helping you identify and correct mistakes as you go.
-              Additionally, FreeCodeCamp's well-structured lessons are
+              Additionally, FreeCodeCamp&apos;s well-structured lessons are
               supplemented with detailed explanations and examples, making
               complex concepts easier to grasp.
             </p>

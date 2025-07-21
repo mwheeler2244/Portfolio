@@ -99,13 +99,13 @@ export default function BlogPage() {
               maxWidth: "600px",
             }}
           >
-            Over the past year, I've documented my web development learning
+            Over the past year, I&apos;ve documented my web development learning
             journey, sharing insights on HTML, CSS, JavaScript, and the best
-            resources I've discovered.
+            resources I&apos;ve discovered.
           </p>
 
           <div className="blog-list">
-            {blogPosts.map((post, index) => (
+            {blogPosts.map((post) => (
               <article key={post.id} className="blog-list-item">
                 <div className="blog-list-left">
                   <h3

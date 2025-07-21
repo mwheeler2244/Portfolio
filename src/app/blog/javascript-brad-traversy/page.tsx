@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function JavaScriptBradTraversyPost() {
   return (
@@ -82,9 +83,11 @@ export default function JavaScriptBradTraversyPost() {
             style={{ marginBottom: "var(--space-12)" }}
           >
             <div>
-              <img
+              <Image
                 src="/blog/assets/blogJS-1.jpg"
                 alt="JavaScript Learning"
+                width={600}
+                height={300}
                 style={{
                   width: "100%",
                   height: "300px",
@@ -95,9 +98,11 @@ export default function JavaScriptBradTraversyPost() {
               />
             </div>
             <div>
-              <img
+              <Image
                 src="/blog/assets/bradTraversy.png"
                 alt="Brad Traversy"
+                width={600}
+                height={300}
                 style={{
                   width: "100%",
                   height: "300px",
@@ -120,10 +125,10 @@ export default function JavaScriptBradTraversyPost() {
               }}
             >
               Highlighting one of the best JavaScript learning resources
-              available: the comprehensive tutorials on Brad Traversy's YouTube
-              channel. These tutorials span a wide range of topics and are
-              perfect for anyone looking to master JavaScript, from beginners to
-              advanced learners.
+              available: the comprehensive tutorials on Brad Traversy&apos;s
+              YouTube channel. These tutorials span a wide range of topics and
+              are perfect for anyone looking to master JavaScript, from
+              beginners to advanced learners.
             </p>
 
             <h3
@@ -163,7 +168,7 @@ export default function JavaScriptBradTraversyPost() {
                   Understanding DOM Manipulation
                 </strong>
                 <br />
-                You'll learn how to interact with HTML elements using
+                You&apos;ll learn how to interact with HTML elements using
                 JavaScript. Brad covers how to use JavaScript to modify the DOM,
                 allowing you to dynamically update your web pages.
               </li>
@@ -172,7 +177,7 @@ export default function JavaScriptBradTraversyPost() {
                   Asynchronous JavaScript (Promises, Async/Await)
                 </strong>
                 <br />
-                One of the highlights of Brad's tutorials is his in-depth
+                One of the highlights of Brad&apos;s tutorials is his in-depth
                 coverage of asynchronous programming. He explains callbacks,
                 promises, and async/await with practical examples, helping you
                 tackle complex tasks like API calls.
@@ -182,7 +187,7 @@ export default function JavaScriptBradTraversyPost() {
                   Object-Oriented Programming (OOP)
                 </strong>
                 <br />
-                Brad introduces the principles of OOP in JavaScript. You'll
+                Brad introduces the principles of OOP in JavaScript. You&apos;ll
                 learn how to create classes, objects, and methods, as well as
                 how to leverage inheritance and encapsulation to structure your
                 code.
@@ -236,7 +241,7 @@ export default function JavaScriptBradTraversyPost() {
                   Clear and Engaging Instruction
                 </strong>
                 <br />
-                Brad's teaching style is known for being easy to follow and
+                Brad&apos;s teaching style is known for being easy to follow and
                 engaging. He breaks down complex concepts into bite-sized,
                 understandable lessons, making it easy for anyone to follow
                 along.
@@ -246,10 +251,11 @@ export default function JavaScriptBradTraversyPost() {
                   Comprehensive Learning
                 </strong>
                 <br />
-                Brad's tutorials cover everything from the fundamentals to
+                Brad&apos;s tutorials cover everything from the fundamentals to
                 advanced topics, making his channel a one-stop-shop for all
-                things JavaScript. Whether you're learning the basics or
-                mastering advanced concepts, Brad's content has you covered.
+                things JavaScript. Whether you&apos;re learning the basics or
+                mastering advanced concepts, Brad&apos;s content has you
+                covered.
               </li>
             </ol>
 
@@ -274,14 +280,14 @@ export default function JavaScriptBradTraversyPost() {
                 color: "var(--color-gray-600)",
               }}
             >
-              That's my current take on learning JavaScript with the help of
-              Brad Traversy's YouTube channel. JavaScript is a powerful language
-              with many nuances, so it's important to be patient and give
-              yourself time to master each concept. I recommend spending at
-              least a month dedicated to only JavaScript, and Brad's tutorials
-              offer plenty of content to keep you busy. Remember, JavaScript is
-              constantly evolving, so take your time, enjoy the journey, and
-              build your skills step by step.
+              That&apos;s my current take on learning JavaScript with the help
+              of Brad Traversy&apos;s YouTube channel. JavaScript is a powerful
+              language with many nuances, so it&apos;s important to be patient
+              and give yourself time to master each concept. I recommend
+              spending at least a month dedicated to only JavaScript, and
+              Brad&apos;s tutorials offer plenty of content to keep you busy.
+              Remember, JavaScript is constantly evolving, so take your time,
+              enjoy the journey, and build your skills step by step.
             </p>
 
             {/* Call to Action */}
