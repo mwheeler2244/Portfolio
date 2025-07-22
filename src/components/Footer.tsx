@@ -183,41 +183,6 @@ export default function Footer() {
                 </svg>
                 <span>GitHub</span>
               </a>
-              <a
-                href="https://x.com/Michael68374214"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="footer-social-link-enhanced"
-              >
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path
-                    d="M14.063 2.25h2.587L10.688 7.875 18 15.75h-5.175L8.438 10.688 3.713 15.75H1.125l6.188-7.087L0 2.25h5.287l4.163 5.513L14.063 2.25zM13.05 14.288h1.35L5.063 3.713H3.6L13.05 14.288z"
-                    fill="currentColor"
-                  />
-                </svg>
-                <span>Twitter</span>
-              </a>
-              <a
-                href="mailto:your-email@example.com"
-                className="footer-social-link-enhanced"
-              >
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path
-                    d="M3.375 4.5h11.25c.621 0 1.125.504 1.125 1.125v6.75c0 .621-.504 1.125-1.125 1.125H3.375c-.621 0-1.125-.504-1.125-1.125v-6.75c0-.621.504-1.125 1.125-1.125z"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    fill="none"
-                  />
-                  <path
-                    d="M15.75 5.625L9 10.125L2.25 5.625"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                <span>Email</span>
-              </a>
             </div>
           </div>
         </div>
