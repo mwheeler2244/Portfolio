@@ -58,13 +58,15 @@ export default function ProjectsPage() {
           className="container"
           style={{
             padding: "0 1.5rem",
+            maxWidth: 1100,
+            margin: "0 auto",
           }}
         >
           <header style={{ textAlign: "center", marginBottom: "3.5rem" }}>
             <h1
               style={{
                 fontWeight: 800,
-                fontSize: "2.5rem",
+                fontSize: "2.7rem",
                 marginBottom: "1.1rem",
                 letterSpacing: "-0.03em",
                 color: "#111827",
@@ -76,7 +78,7 @@ export default function ProjectsPage() {
             <p
               style={{
                 color: "#6b7280",
-                fontSize: "1.15rem",
+                fontSize: "1.18rem",
                 lineHeight: 1.7,
                 fontWeight: 400,
                 maxWidth: 520,
@@ -96,7 +98,16 @@ export default function ProjectsPage() {
           )}
 
           {!loading && !error && (
-            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+            <ul
+              style={{
+                listStyle: "none",
+                padding: 0,
+                margin: 0,
+                maxWidth: 800,
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            >
               {projects
                 .filter(
                   (project) =>
@@ -120,11 +131,12 @@ export default function ProjectsPage() {
                         alignItems: "baseline",
                         justifyContent: "space-between",
                         gap: 16,
+                        marginBottom: 6,
                       }}
                     >
                       <h2
                         style={{
-                          fontSize: "1.45rem",
+                          fontSize: "1.32rem",
                           fontWeight: 700,
                           margin: 0,
                           color: "#111827",
@@ -154,11 +166,12 @@ export default function ProjectsPage() {
                         fontSize: "1.08rem",
                         lineHeight: 1.6,
                         fontWeight: 400,
+                        minHeight: 48,
                       }}
                     >
                       {project.description || "No description provided."}
                     </p>
-                    {/* Technical details section */}
+                    {/* Technical details section with icons */}
                     <div
                       style={{
                         marginBottom: "1.1rem",
@@ -167,7 +180,8 @@ export default function ProjectsPage() {
                         fontWeight: 400,
                         display: "flex",
                         flexWrap: "wrap",
-                        gap: "1.2rem",
+                        gap: "1.1rem 1.7rem",
+                        alignItems: "center",
                       }}
                     >
                       <span>
@@ -176,14 +190,72 @@ export default function ProjectsPage() {
                       <span>
                         <strong>Framework:</strong> Next.js
                       </span>
-                      <span>
-                        <strong>Stars:</strong> {project.stargazers_count}
+                      <span
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 4,
+                        }}
+                      >
+                        <svg
+                          width="16"
+                          height="16"
+                          fill="none"
+                          viewBox="0 0 20 20"
+                          style={{ marginRight: 2 }}
+                        >
+                          <path
+                            fill="#fbbf24"
+                            d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"
+                          />
+                        </svg>
+                        {project.stargazers_count}
                       </span>
-                      <span>
-                        <strong>Forks:</strong> {project.forks_count}
+                      <span
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 4,
+                        }}
+                      >
+                        <svg
+                          width="16"
+                          height="16"
+                          fill="none"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fill="#38bdf8"
+                            d="M5 3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5zm0 2h10v10H5V5zm2 2v2h6V7H7zm0 4v2h4v-2H7z"
+                          />
+                        </svg>
+                        {project.forks_count}
                       </span>
-                      <span>
-                        <strong>Issues:</strong> {project.open_issues_count}
+                      <span
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 4,
+                        }}
+                      >
+                        <svg
+                          width="16"
+                          height="16"
+                          fill="none"
+                          viewBox="0 0 20 20"
+                        >
+                          <circle cx="10" cy="10" r="8" fill="#ef4444" />
+                          <text
+                            x="10"
+                            y="15"
+                            textAnchor="middle"
+                            fontSize="12"
+                            fill="#fff"
+                          >
+                            !
+                          </text>
+                        </svg>
+                        {project.open_issues_count}
                       </span>
                       {project.license &&
                         project.license.spdx_id !== "NOASSERTION" && (
@@ -199,8 +271,9 @@ export default function ProjectsPage() {
                     <div
                       style={{
                         display: "flex",
-                        gap: "1.5rem",
+                        gap: "1.3rem",
                         alignItems: "center",
+                        marginTop: "auto",
                       }}
                     >
                       {project.homepage && (
@@ -210,21 +283,40 @@ export default function ProjectsPage() {
                           rel="noopener noreferrer"
                           style={{
                             color: "#2563eb",
-                            textDecoration: "underline",
+                            textDecoration: "none",
                             fontWeight: 600,
                             fontSize: "1rem",
-                            padding: 0,
-                            background: "none",
-                            border: "none",
-                            transition: "color 0.18s cubic-bezier(.4,0,.2,1)",
+                            padding: "0.18rem 0.7rem",
+                            borderRadius: 6,
+                            background: "#f1f5fd",
+                            border: "1px solid #dbeafe",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 5,
+                            transition: "background 0.18s, color 0.18s",
                           }}
                           onMouseEnter={(e) => {
+                            e.currentTarget.style.background = "#dbeafe";
                             e.currentTarget.style.color = "#1d4ed8";
                           }}
                           onMouseLeave={(e) => {
+                            e.currentTarget.style.background = "#f1f5fd";
                             e.currentTarget.style.color = "#2563eb";
                           }}
                         >
+                          <svg
+                            width="16"
+                            height="16"
+                            fill="none"
+                            viewBox="0 0 20 20"
+                            style={{ marginRight: 3 }}
+                          >
+                            <path
+                              stroke="#2563eb"
+                              strokeWidth="1.5"
+                              d="M7 13l6-6m0 0H8m5-0v5"
+                            />
+                          </svg>
                           Live Demo
                         </a>
                       )}
@@ -234,21 +326,40 @@ export default function ProjectsPage() {
                         rel="noopener noreferrer"
                         style={{
                           color: "#64748b",
-                          textDecoration: "underline",
+                          textDecoration: "none",
                           fontWeight: 500,
                           fontSize: "1rem",
-                          padding: 0,
-                          background: "none",
-                          border: "none",
-                          transition: "color 0.18s cubic-bezier(.4,0,.2,1)",
+                          padding: "0.18rem 0.7rem",
+                          borderRadius: 6,
+                          background: "#f3f4f6",
+                          border: "1px solid #e5e7eb",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 5,
+                          transition: "background 0.18s, color 0.18s",
                         }}
                         onMouseEnter={(e) => {
+                          e.currentTarget.style.background = "#e5e7eb";
                           e.currentTarget.style.color = "#111827";
                         }}
                         onMouseLeave={(e) => {
+                          e.currentTarget.style.background = "#f3f4f6";
                           e.currentTarget.style.color = "#64748b";
                         }}
                       >
+                        <svg
+                          width="16"
+                          height="16"
+                          fill="none"
+                          viewBox="0 0 20 20"
+                          style={{ marginRight: 3 }}
+                        >
+                          <path
+                            stroke="#64748b"
+                            strokeWidth="1.5"
+                            d="M7 13l6-6m0 0H8m5-0v5"
+                          />
+                        </svg>
                         View Code
                       </a>
                     </div>
