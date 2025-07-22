@@ -225,7 +225,7 @@ export default function JavaScriptBradTraversyPost() {
                 textTransform: "none",
               }}
             >
-              Why Brad Traversy's Tutorials Stand Out
+              Why Brad Traversy&apos;s Tutorials Stand Out
             </h3>
 
             <ol

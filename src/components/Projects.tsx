@@ -336,7 +336,7 @@ export default function Projects() {
 
           <div className="cta-content-wrapper">
             <div className="cta-main-content">
-              <div className="cta-badge">LET'S COLLABORATE</div>
+              <div className="cta-badge">LET&apos;S COLLABORATE</div>
               <h3 className="cta-title">
                 Turn Your Vision Into
                 <br />
