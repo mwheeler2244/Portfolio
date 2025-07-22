@@ -54,27 +54,9 @@ export default function ProjectsPage() {
           minHeight: "100vh",
         }}
       >
-        <div
-          className="container"
-          style={{
-            padding: "0 1.5rem",
-            maxWidth: 1100,
-            margin: "0 auto",
-          }}
-        >
+        <div className="container" style={{}}>
           <header style={{ textAlign: "center", marginBottom: "3.5rem" }}>
-            <h1
-              style={{
-                fontWeight: 800,
-                fontSize: "2.7rem",
-                marginBottom: "1.1rem",
-                letterSpacing: "-0.03em",
-                color: "#111827",
-                lineHeight: 1.1,
-              }}
-            >
-              All Projects
-            </h1>
+            <h1>All Projects</h1>
             <p
               style={{
                 color: "#6b7280",
@@ -98,16 +80,7 @@ export default function ProjectsPage() {
           )}
 
           {!loading && !error && (
-            <ul
-              style={{
-                listStyle: "none",
-                padding: 0,
-                margin: 0,
-                maxWidth: 800,
-                marginLeft: "auto",
-                marginRight: "auto",
-              }}
-            >
+            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
               {projects
                 .filter(
                   (project) =>
