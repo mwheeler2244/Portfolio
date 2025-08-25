@@ -115,22 +115,15 @@ export default function Navigation() {
 
             {/* Enhanced Navigation Menu */}
             <nav className={`nav-menu-modern ${isMenuOpen ? "active" : ""}`}>
+              {/* Mobile Close Button */}
+
               <div className="nav-links-modern">
-                <Link
-                  className="nav-link-modern"
-                  href="#projects"
-                  onClick={(e) => handleNavClick(e, "#projects")}
-                >
-                  <span className="nav-link-text">Work</span>
-                  <span className="nav-link-number">01</span>
-                </Link>
                 <Link
                   className="nav-link-modern"
                   href="#about"
                   onClick={(e) => handleNavClick(e, "#about")}
                 >
                   <span className="nav-link-text">About</span>
-                  <span className="nav-link-number">02</span>
                 </Link>
                 <Link
                   className="nav-link-modern"
@@ -138,7 +131,6 @@ export default function Navigation() {
                   onClick={closeMenu}
                 >
                   <span className="nav-link-text">Blog</span>
-                  <span className="nav-link-number">03</span>
                 </Link>
                 <Link
                   className="nav-link-modern nav-link-cta"
@@ -159,35 +151,6 @@ export default function Navigation() {
               </div>
 
               {/* Mobile Menu Footer */}
-              <div className="nav-menu-footer">
-                <div className="nav-social-links">
-                  <a
-                    href="https://www.linkedin.com/in/michael-wheeler12/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn
-                  </a>
-                  <a
-                    href="https://github.com/mwheeler2244"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
-                  <a
-                    href="https://x.com/Michael68374214"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Twitter
-                  </a>
-                </div>
-                <div className="nav-menu-contact">
-                  <span>Ready to start a project?</span>
-                  <a href="mailto:your-email@example.com">Get in touch</a>
-                </div>
-              </div>
             </nav>
 
             {/* Menu Overlay */}
