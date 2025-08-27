@@ -116,6 +116,21 @@ export default function Navigation() {
             {/* Enhanced Navigation Menu */}
             <nav className={`nav-menu-modern ${isMenuOpen ? "active" : ""}`}>
               {/* Mobile Close Button */}
+              <button
+                className="mobile-menu-close"
+                onClick={closeMenu}
+                aria-label="Close menu"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M18 6L6 18M6 6L18 18"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
 
               <div className="nav-links-modern">
                 <Link
@@ -154,9 +169,10 @@ export default function Navigation() {
             </nav>
 
             {/* Menu Overlay */}
-            {isMenuOpen && (
-              <div className="nav-overlay" onClick={closeMenu}></div>
-            )}
+            <div
+              className={`nav-overlay ${isMenuOpen ? "active" : ""}`}
+              onClick={closeMenu}
+            ></div>
           </div>
         </div>
       </header>
