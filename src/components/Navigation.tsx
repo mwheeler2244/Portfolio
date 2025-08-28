@@ -27,12 +27,28 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Cleanup body class when component unmounts
+  useEffect(() => {
+    return () => {
+      document.body.classList.remove("menu-open");
+    };
+  }, []);
+
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    const newMenuState = !isMenuOpen;
+    setIsMenuOpen(newMenuState);
+
+    // Prevent body scroll when menu is open
+    if (newMenuState) {
+      document.body.classList.add("menu-open");
+    } else {
+      document.body.classList.remove("menu-open");
+    }
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+    document.body.classList.remove("menu-open");
   };
 
   const handleNavClick = (
@@ -169,13 +185,15 @@ export default function Navigation() {
             </nav>
 
             {/* Menu Overlay */}
-            <div
-              className={`nav-overlay ${isMenuOpen ? "active" : ""}`}
-              onClick={closeMenu}
-            ></div>
           </div>
         </div>
       </header>
+
+      {/* Menu Overlay - Moved outside header to cover entire viewport */}
+      <div
+        className={`nav-overlay ${isMenuOpen ? "active" : ""}`}
+        onClick={closeMenu}
+      ></div>
     </>
   );
 }
