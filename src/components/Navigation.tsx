@@ -164,20 +164,11 @@ export default function Navigation() {
                   <span className="nav-link-text">Blog</span>
                 </Link>
                 <Link
-                  className="nav-link-modern nav-link-cta"
+                  className="nav-link-modern"
                   href="/contact"
                   onClick={closeMenu}
                 >
                   <span className="nav-link-text">Contact</span>
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path
-                      d="M8 1L15 8L8 15M15 8H1"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
                 </Link>
               </div>
 

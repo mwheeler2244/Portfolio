@@ -37,7 +37,7 @@ export default function Hero() {
                 marginTop: "2rem",
                 color: "var(--color-black)",
                 textTransform: "uppercase",
-                paddingRight: "1rem",
+                paddingRight: "1.5rem",
               }}
             >
               FULL STACK

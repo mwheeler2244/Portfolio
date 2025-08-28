@@ -3222,10 +3222,6 @@ picture {
     padding: var(--space-4) var(--space-5);
   }
 
-  .nav-link-cta {
-    padding: var(--space-4) var(--space-6);
-  }
-
   .nav-menu-footer {
     bottom: var(--space-6);
     padding: 0 var(--space-4);
